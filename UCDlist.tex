@@ -871,8 +871,11 @@ Text of Abstract, last two lines. Added reference to \citet{tn:solar-system-ucd}
 Section 1.1 Definition: ``Abbreviations are used in contexts where their meaning is unambiguous'' instead of ``kept to a minimum...''
 
 \subsubsection*{Amendments/clarifications}
-Description changed in words: {\tt em.UV.10-50nm}, {\tt em.UV.100-200nm}, {\tt em.UV.200-300nm}, {\tt meta.id.PI}, 
+\begin{flushleft}
+Description changed in words: 
+{\tt em.UV.10-50nm}, {\tt em.UV.100-200nm}, {\tt em.UV.200-300nm}, {\tt meta.id.PI}, 
 {\tt phot.flux}, {\tt phot.fluence}, {\tt src.class}.
+\end{flushleft}
 
 \subsubsection*{Additions}
 \footnotesize\begin{longtable}[h!]{c|p{40ex}|p{0.45\textwidth}}
@@ -948,7 +951,10 @@ Description changed in words: {\tt phys.atmol.qn}
 \subsubsection*{Amendments/clarifications}
 \begin{itemize}
 \item Syntax flag changed in words: {\tt phys.polarization}
-\item Description changed in words: {\tt em.IR.FIR}, {\tt em.IR.MIR}, {\tt em.IR.NIR}, {\tt em.line.OIII}
+\item \begin{flushleft}
+Description changed in words: 
+{\tt em.IR.FIR}, {\tt em.IR.MIR}, {\tt em.IR.NIR}, {\tt em.line.OIII}
+\end{flushleft}
 \end{itemize}
 
 \subsection{Changes from PR v1.2}
@@ -962,12 +968,16 @@ Description changed in words: {\tt phys.atmol.qn}
 \begin{itemize}
 \item Spelling: {\tt phys.atmol.sWeight}
 \item Syntax flag changed in words: {\tt phys.atmol}, {\tt spect.line}
-\item Description changed in words: {\tt meta.dataset}, {\tt obs.atmos}, {\tt phot.color.reddFree}, 
+\item \begin{flushleft}
+Description changed in words: 
+{\tt meta.dataset}, {\tt obs.atmos}, {\tt phot.color.reddFree}, 
 {\tt phys.size}, {\tt phys.size.diameter}, {\tt phys.size.radius}, {\tt stat.param}, {\tt stat.value}, 
 {\tt time}, {\tt time.epoch}, {\tt time.interval}, {\tt time.period}, {\tt time.phase}.
+\end{flushleft}
 \end{itemize}
 
 \subsubsection*{Additions}
+\begin{flushleft}
 {\tt em.bin}, {\tt em.binSize}, {\tt em.IR.FIR}, {\tt em.IR.MIR}, {\tt em.IR.NIR}, {\tt em.UV.FUV}, 
 {\tt meta.abstract}, {\tt meta.code.status}, {\tt meta.email}, {\tt meta.id.PI}, {\tt meta.id.CoI}, 
 {\tt meta.ref.ivorn}, {\tt meta.ref.uri}, {\tt obs.calib.flat}, {\tt obs.exposure}, {\tt obs.proposal}, 
@@ -976,6 +986,7 @@ Description changed in words: {\tt phys.atmol.qn}
 {\tt spect.line.strength}, {\tt src.calib}, {\tt src.calib.guideStar}, {\tt src.net}, {\tt stat.filling}, 
 {\tt stat.probability}, {\tt stat.uncalib}, {\tt time.creation}, {\tt time.duration}, {\tt time.end}, 
 {\tt time.processing}, {\tt time.publiYear}, {\tt time.release}, {\tt time.star}
+\end{flushleft}
 
 \subsubsection*{Deletions/replacements}
 \begin{itemize}
@@ -1037,23 +1048,31 @@ Deprecated UCD & New corresponding UCD\\
 \sptablerule
 \end{tabular}
 
-\item The following words have been created: {\tt phys.polarization.circular}, 
+\item \begin{flushleft}
+The following words have been created: 
+{\tt phys.polarization.circular}, 
 {\tt phys.polarization.linear}, {\tt phys.size.axisRatio}, {\tt pos.bodyrc.alt}, 
 {\tt pos.bodyrc.lat}, {\tt pos.bodyrc.long}, {\tt time.event}, {\tt time.event.end}, 
 {\tt time.event.start}.
+\end{flushleft}
 \end{enumerate}
 
 \subsection{Changes from v1.01}
 
-The following words have been restored to their previous spelling (v1.00): {\tt phot.fluDensity}, 
+The following words have been restored to their previous spelling (v1.00): 
+\begin{flushleft}
+{\tt phot.fluDensity}, 
 {\tt phys.energDensity}, {\tt phys.mYield}, {\tt phot.fluxDensity}, {\tt phys.energyDensity}, 
 {\tt phys.massYield}.
+\end{flushleft}
 
 A note has been added to indicate that these words do not strictly comply with the UCD1+ Rec.
 
 \subsection{Changes from v1.00}
 \begin{enumerate}
-\item Descriptions have been changed for the following words: {\tt em.IR.H}, {\tt em.IR.J}, 
+\item \begin{flushleft}
+Descriptions have been changed for the following words: 
+{\tt em.IR.H}, {\tt em.IR.J}, 
 {\tt em.IR.K}, {\tt em.X-ray.hard}, {\tt em.X-ray.medium}, {\tt em.X-ray.soft}, {\tt em.gamma.hard}, 
 {\tt em.gamma.soft}, {\tt em.opt.B}, {\tt em.opt.I}, {\tt em.opt.R}, {\tt em.opt.U}, {\tt em.opt.V}, 
 {\tt instr.bandpass}, {\tt phot.count}, {\tt phys.density}, {\tt phys.mol.dipole.electric}, 
@@ -1061,9 +1080,10 @@ A note has been added to indicate that these words do not strictly comply with t
 {\tt pos.precess}, {\tt src}, {\tt src.class.distance}, {\tt src.class.richness}, 
 {\tt src.class.starGalaxy}, {\tt src.class.struct}, {\tt time.expo}, {\tt time.expo.end}, 
 {\tt time.expo.start}, {\tt time.interval}
+\end{flushleft}
 \item The following words have been deprecated: 
 
-\begin{tabular}{|l|l|}
+\begin{longtable}{|l|l|}
 \sptablerule
 Deprecated UCD & New corresponding UCD\\
 \sptablerule
@@ -1114,11 +1134,16 @@ Deprecated UCD & New corresponding UCD\\
 {\tt src.veloc.pulsat} & {\tt phys.veloc.pulsat}\\
 {\tt src.veloc.rotat} & {\tt phys.veloc.rotat}\\
 \sptablerule
-\end{tabular}
+\end{longtable}
 
-\item The syntax flags changed for words: {\tt instr.fov}, {\tt instr.obsty}, {\tt meta.file}, 
+\item \begin{flushleft}
+The syntax flags changed for words: 
+{\tt instr.fov}, {\tt instr.obsty}, {\tt meta.file}, 
 {\tt phys.angSize}, {\tt pos.cartesian}, {\tt stat.fit.omc}
-\item The following words have been created: {\tt instr.dispersion}, {\tt instr.order}, {\tt 
+\end{flushleft}
+\item \begin{flushleft}
+The following words have been created: 
+{\tt instr.dispersion}, {\tt instr.order}, {\tt 
 instr.tel.focalLength}, {\tt meta.curation}, {\tt meta.software}, {\tt meta.version}, {\tt 
 obs.atmos}, {\tt obs.atmos.extinction}, {\tt obs.airMass}, {\tt obs.atmos.refractAngle}, 
 {\tt obs.calib}, {\tt phys.at.radiationType}, {\tt phys.atmol.branchingRatio}, {\tt 
@@ -1131,6 +1156,7 @@ spect.dopplerVeloc.opt}, {\tt src.orbital.meanMotion}, {\tt phys.veloc}, {\tt ph
 {\tt phys.veloc.dispersion}, {\tt phys.veloc.escape}, {\tt phys.veloc.expansion}, {\tt 
 phys.veloc.microTurb}, {\tt phys.veloc.orbital}, {\tt phys.veloc.pulsat}, {\tt phys.veloc.rotat}, 
 {\tt phys.veloc.transverse}, {\tt time.obs}, {\tt time.obs.end}, {\tt time.obs.start}.
+\end{flushleft}
 \end{enumerate}
 
 \subsection{Changes from v0.2}
@@ -1139,7 +1165,7 @@ phys.veloc.microTurb}, {\tt phys.veloc.orbital}, {\tt phys.veloc.pulsat}, {\tt p
 \item new syntax codes (E, C, V) have been introduced, and described in appendix A
 \item The following words have been renamed
 
-\begin{tabular}{|l|l|}
+\begin{longtable}{|l|l|}
 \sptablerule
 Deprecated UCD & New corresponding UCD\\
 \sptablerule
@@ -1168,18 +1194,21 @@ Deprecated UCD & New corresponding UCD\\
 {\tt pos.sg.lon} & {\tt pos.supergalactic.lon}\\
 {\tt src.class.star-galaxy} & {\tt src.class.starGalaxy}\\
 \sptablerule
-\end{tabular}
+\end{longtable}
 
-\item The following words have been created: {\tt instr.beam}, {\tt meta.code.error}, {\tt meta.id.part}, {\tt phot.flux.sb}, 
+\item \begin{flushleft}
+The following words have been created: 
+{\tt instr.beam}, {\tt meta.code.error}, {\tt meta.id.part}, {\tt phot.flux.sb}, 
 {\tt phys.angArea}, {\tt phys.angSize}, {\tt phys.angSize.smajAxis}, {\tt phys.angSize.sminAxis}, {\tt phys.area}, 
 {\tt phys.at.damping}, {\tt phys.at.weight}, {\tt phys.atmol.excitation}, {\tt phys.mol.dissociation}, {\tt 
 phys.recombination.coeff}, {\tt phys.size.smajAxis}, {\tt phys.size.sminAxis}, {\tt pos.cartesian}, {\tt pos.cartesian.x},
 {\tt pos.cartesian.y}, {\tt pos.cartesian.z}, {\tt pos.distance}, {\tt pos.eq.spd}, {\tt pos.galactocentric}, {\tt 
 pos.geocentric}, {\tt pos.healpix}, {\tt pos.heliocentric}, {\tt pos.HTM}, {\tt pos.lambert}, {\tt pos.satellite}, 
 {\tt spect.line.broad.Stark}, {\tt spect.veloc}, {\tt src.redshift.phot}, {\tt stat.correlation}, {\tt time.lifetime}.
+\end{flushleft}
 \item Some words have been removed. The following table summarizes, when relevant, the suggested replacement to be used. 
 
-\begin{tabular}{|l|l|}
+\begin{longtable}{|l|l|}
 \sptablerule
 Deprecated UCD & New corresponding UCD\\
 \sptablerule
@@ -1222,7 +1251,7 @@ Deprecated UCD & New corresponding UCD\\
 {\tt src.veloc.geoc} & {\tt src.veloc;pos.geocentric}\\
 {\tt src.veloc.hc} & {\tt src.veloc;pos.heliocentric}\\
 \sptablerule
-\end{tabular}
+\end{longtable}
 \end{enumerate}
 
 \subsection{Changes from v0.1}
