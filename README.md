@@ -7,9 +7,20 @@
 
 UCD: **U**nified **C**ontrolled **D**escriptors 
 
-Since their definition UCDs have been used in major catalogue archives, in the definition of various
-VO protocols (SSA, SIAv2, SLAP, TAP ObsTAP, EPN-TAP, etc.) and used with success to provide semantic
-annotation for a huge collection of table columns distributed in the astronomical community.
+Since their definition UCDs have been used in major catalogue archives, in the 
+definition of various VO protocols (SSA, SIAv2, SLAP, TAP ObsTAP, EPN-TAP, etc.) 
+and used with success to provide semantic annotation for a huge collection of 
+table columns distributed in the astronomical community.
+
+This version contains new UCD words discussed and accepted by the Semantics 
+Working Group during the UCD list v1.3 RFM.
+
+The list of UCD1+ words is maintained by the UCD Scientific Board, following the 
+procedure defined in the [UCDList 
+Recommendation](http://www.ivoa.net/Documents/latest/UCD.html) document and 
+described in detail in the [Maintenance of the list of UCD words 
+Recommandation](http://www.ivoa.net/documents/latest/UCDlistMaintenance.html).
+
 
 ## Status?
 
@@ -21,7 +32,7 @@ Next version will be 1.4. A Proposed Endorsed Note is being prepared in this rep
 yet as stable for operational implementation._
 
 See also the section
-[Releases](https://github.com/ivoa-std/ADQL/releases) of this GitHub Repository.
+[Releases](https://github.com/ivoa-std/UCDList/releases) of this GitHub Repository.
 
 
 
@@ -35,7 +46,7 @@ DOC) should be stored in this repository.
 
 ## Want to contribute?
 
-1. [Raise a GitHub Issue](https://github.com/ivoa-std/ADQL/issues/new) on this
+1. [Raise a GitHub Issue](https://github.com/ivoa-std/UCDList/issues/new) on this
    repository
 
 2. Fork this repository _(eventually clone it on your machine if you want to)_
