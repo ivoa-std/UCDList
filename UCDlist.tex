@@ -139,7 +139,8 @@ they are now also used in VOTable documents for planetary data \citep{wd:epntap,
 
 \subsection{Remarks on combination rules}
 The combination rules have been defined in the first IVOA documents defining UCD concept
-\citep{std:UCD}.
+\citep{std:UCD}. They are exposed with a syntax tag given as a property of each UCD word 
+and included in the list of UCD words. See Appendix \ref{sec:list} with the tags definitions on top.
 
 They correspond to real usage of the terms in science publications and are attached to the description 
 of catalogues’ column by experimented data scientists. UCD combination also reflects the catalogues 
@@ -171,7 +172,8 @@ searched for in primary order, and the most relevant UCD words to represent a qu
 S is the code for the qualifying part of the UCD, the secondary information appended to specify 
 the first UCD term.
 
-All the codes are explained and given in the list of UCD terms in Appendix A. Example:
+%All the codes are explained and given in the list of UCD terms in Appendix A. 
+Example:
 \begin{itemize}
 \item Give me all columns / all catalogues with a column having a magnitude in R: {\tt magnitude} 
 is the primary concept and band R is the secondary concept, so the ucd to search for is 
