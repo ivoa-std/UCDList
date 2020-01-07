@@ -5,8 +5,8 @@
 \usepackage{verbatim}
 \usepackage{longtable}
 \usepackage{natbib} 
-
-\title{UCD1+ controlled vocabulary-version mireille}
+\usepackage{enumitem} 
+\title{UCD1+ controlled vocabulary}
 
 % see ivoatexDoc for what group names to use here
 \ivoagroup{Semantics}
@@ -164,7 +164,7 @@ defined and endorsed IVOA data model specification.
 \subsection{P or S syntax code: Which is the most pertinent position for a UCD word?}
 P, S and Q are the labels expressing in which position of a UCD expression a term can be used, P 
 in first place, S as suffix , and Q in both allowed position: head and tail. The UCD list defines 
-the recommended position for each words with some flexibility.
+the recommended position for each word with some flexibility.
 
 P is always what matters the most to describe a quantity i.e. the kind of property that should be 
 searched for in primary order, and the most relevant UCD words to represent a quantity.
@@ -173,7 +173,7 @@ S is the code for the qualifying part of the UCD, the secondary information appe
 the first UCD term.
 
 %All the codes are explained and given in the list of UCD terms in Appendix A. 
-Example:
+Examples:
 \begin{itemize}
 \item Give me all columns / all catalogues with a column having a magnitude in R: {\tt magnitude} 
 is the primary concept and band R is the secondary concept, so the ucd to search for is 
@@ -194,13 +194,19 @@ All words are preceded by a `syntax' code that can help in the process of buildi
 \item ``S'' stands for only secondary: the word cannot be used as the first word to describe a 
 single quantity;
 \item ``Q'' means that the word can be used indifferently as first or secondary word;
-\item ``E'' means a photometric quantity, and can be followed by a word describing a part of 
-the electromagnetic spectrum;
-\item ``C'' is a colour index, and can be followed by two successive word describing a part of 
-the electromagnetic spectrum;
-\item ``V'' stands for vector. Such a word can be followed by another describing the axis or 
-reference frame in which the measurement is done.
+
+The following cases behave as Q prefix and can be combined  as primary or secondary.
+They specialize the combination rules:  
+	\begin{enumerate}[label*=\arabic*.]
+	\item ``E'' means a photometric quantity, and can be followed by a word describing a part of 
+	the electromagnetic spectrum;
+	\item ``C'' is a colour index, and can be followed by two successive word describing a part of 
+	the electromagnetic spectrum;
+	\item ``V'' stands for vector. Such a word can be followed by another describing the axis or 
+	reference frame in which the measurement is done.
+	\end{enumerate}
 \end{enumerate}
+\newpage
 
 %\begin{table}[h!]
 %\begin{tabular}{c|l|p{0.5\textwidth}}
@@ -802,7 +808,8 @@ Q & {\tt phys.polarization.coherency} & Matrix of the correlation between compon
 \sptablerule
 \end{longtable}
 %\subsubsection*{Clarification}
-
+%text improvement 
+Clarified position rules for syntax code E,C,V in Appendix B.  
 
 \subsection{Changes from PR v1.3-2018 following TCG comments}
 \subsubsection*{Update of definitions} 
