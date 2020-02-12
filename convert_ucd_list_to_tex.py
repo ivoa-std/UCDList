@@ -5,7 +5,7 @@ import sys
 def convert_line(line):
     pieces = line.split('|')
     if len(pieces) == 3:
-        print('{} & {{\\tt {}}} & {}\\\\'.format(pieces[0].strip(), pieces[1].strip(), pieces[2].strip()))
+        print('{} & \\ucd {} \\enducd& {}\\\\'.format(pieces[0].strip(), pieces[1].strip(), pieces[2].strip()))
 
 def ucd_to_tex(file):
     with open(file, 'r') as f:
