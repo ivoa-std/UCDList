@@ -22,7 +22,7 @@
 \def\enducd{\endgroup}
 \else
 \begingroup
-\gdef\breakabledot{\discretionary{}{...}{.}}
+\gdef\breakabledot{\discretionary{...}{...}{.}}
 \catcode`\.=\active
 \gdef\ucd{\begingroup\tt\catcode`\.=\active\let.=\breakabledot}
 \gdef\enducd{\endgroup}
