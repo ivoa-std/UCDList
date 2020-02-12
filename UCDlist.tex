@@ -17,12 +17,17 @@
 \newcolumntype{D}[1]{>{\raggedright\tolerance=7000\let\newline\\\arraybackslash
   \hspace{0pt}}p{#1}}
 
+\iftth
+\def\ucd{\begingroup\tt}
+\def\enducd{\endgroup}
+\else
 \begingroup
 \gdef\breakabledot{\discretionary{}{...}{.}}
 \catcode`\.=\active
 \gdef\ucd{\begingroup\tt\catcode`\.=\active\let.=\breakabledot}
 \gdef\enducd{\endgroup}
 \endgroup
+\fi
 
 % see ivoatexDoc for what group names to use here
 \ivoagroup{Semantics}
