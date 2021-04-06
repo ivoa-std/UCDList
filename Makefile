@@ -7,7 +7,7 @@ DOCNAME = UCDlist
 DOCVERSION = 1.4
 
 # Publication date, ISO format; update manually for "releases"
-DOCDATE = 2019-11-12
+DOCDATE = 2021-04-06
 
 # What is it you're writing: NOTE, WD, PR, REC, PEN, or EN
 DOCTYPE = PEN
