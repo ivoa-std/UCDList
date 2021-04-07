@@ -7,7 +7,7 @@
 name: Update PDF Preview
 
 env:
-  doc_name: ucdlist
+  doc_name: UCDlist
 
 on:
   push:
