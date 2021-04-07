@@ -1,7 +1,7 @@
 name: Check the IVOA document
 
 env:
-  doc_name: ucdlist
+  doc_name: UCDlist
 
 on:
   pull_request:
