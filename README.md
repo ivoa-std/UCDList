@@ -5,7 +5,7 @@
 
 ## What is it?
 
-UCD: **U**nified **C**ontrolled **D**escriptors 
+UCD: **U**nified **C**ontent **D**escriptors 
 
 Since their definition UCDs have been used in major catalogue archives, in the 
 definition of various VO protocols (SSA, SIAv2, SLAP, TAP ObsTAP, EPN-TAP, etc.) 
