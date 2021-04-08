@@ -29,6 +29,23 @@
 \endgroup
 \fi
 
+% having descriptions in a narrow column is painful -- the following
+% is an attempt to define a suitable column style ("D"escription)
+\newcolumntype{D}[1]{>{\raggedright\tolerance=7000\let\newline\\\arraybackslash
+  \hspace{0pt}}p{#1}}
+
+\iftth
+\def\ucd{\begingroup\tt}
+\def\enducd{\endgroup}
+\else
+\begingroup
+\gdef\breakabledot{\discretionary{...}{...}{.}}
+\catcode`\.=\active
+\gdef\ucd{\begingroup\tt\catcode`\.=\active\let.=\breakabledot}
+\gdef\enducd{\endgroup}
+\endgroup
+\fi
+
 % see ivoatexDoc for what group names to use here
 \ivoagroup{Semantics}
 
@@ -675,7 +692,7 @@ acceptable, but {\bf t} is ambiguous: {\bf time} and {\bf temperature} are used 
 (position angle = {\bf posAng}) unless the composed word has a well- known acronym (signal to noise ratio = 
 {\bf snr}) or short form (standard deviation = {\bf stdev}). There are only two exceptions to this rule: 
 (i) the X-ray band ({\bf em.X-ray}) and (ii) the frequency / wavelength intervals defining regions of the 
-e.m. spectrum (e.g., {\bf em.radio.3-6GHz}).
+e.m.~spectrum (e.g., {\bf em.radio.3-6GHz}).
 \end{enumerate}
 
 \subsection{Definition of words}
@@ -801,7 +818,6 @@ value is error, qualified by {\tt phot.mag}, itself qualified by {\tt em.opt.B}.
 \end{itemize}
 Concatenation can apply more than one time, depending on ordering rules. See \citet{2005ivoa.spec.0819D}, section 3.3, 
 for other details.
-
 
 
 \section{Changes from previous versions}
