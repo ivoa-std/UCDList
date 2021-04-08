@@ -36,7 +36,8 @@ This version contains new UCD words discussed and accepted by the Semantics Work
 
 \end{abstract} 
 
-\section{Definition of atoms and words}
+\section{Introduction}
+
 A UCD is a string which contains textual tokens called `words', separated by semicolons(;). A word is composed of 
 `atoms', separated by periods(.). The hierarchy is as follows: 
 $$
@@ -44,147 +45,11 @@ $$
 $$
 UCD1+ are either single words, or a composition of several words.
 
-UCDs are ``controlled'' through a process defined in the IVOA. See \citet{std:UCD} and section \ref{sec:words} below. 
+UCDs are ``controlled'' through a process defined in the IVOA. See \citet{2005ivoa.spec.0819D} and section \ref{sec:words} below. 
 Control is exercised at the level of words (UCD1+) and at the level of the vocabulary (atoms) used to form words. A 
 consistent list of atoms will be maintained, making sure that the same atom always means the same thing, even if used 
 in combination with different other atoms. 
 
-\subsection{Definition of atoms}
-Atoms are defined following these guidelines:
-\begin{enumerate}
-\item Abbreviations are used in contexts where their meaning is unambiguous. ({\bf ra}, {\bf dec} are 
-acceptable, but {\bf t} is ambiguous: {\bf time} and {\bf temperature} are used instead.)
-\item Atoms are not hyphenated. The separation is marked by a capital letter to help readability 
-(position angle = {\bf posAng}) unless the composed word has a well- known acronym (signal to noise ratio = 
-{\bf snr}) or short form (standard deviation = {\bf stdev}). There are only two exceptions to this rule: 
-(i) the X-ray band ({\bf em.X-ray}) and (ii) the frequency / wavelength intervals defining regions of the 
-e.m. spectrum (e.g., {\bf em.radio.3-6GHz}).
-\end{enumerate}
-
-\subsection{Definition of words}
-\label{sec:words}
-The list of UCD1+ words presented in this document was initially generated applying the rules and 
-recommendations of PR-UCD-20040823 to catalogues/tables in VizieR. The original motivation was to 
-transform old UCD1 into an improved version, trying to build a list of combinations of new words that 
-could describe all the existing UCD1 terms.
-
-The list of UCD1+ words is maintained by the UCD Scientific Board, following the procedure defined 
-in the UCD Recommendation document \citep{std:UCD} and described in detail in 
-\citet{std:UCDMAINT-PR}\footnote{An earlier draft on UCD building, still at 
-\url{http://www.ivoa.net/documents/PR/UCD/UCD-20040823.html} includes more details 
-about the process of the change from the earlier ``UCD1'' standard, and may be of historical interest, or 
-provide more rationale.}.
-
-\section{The structure of the UCD1+ tree}
-All existing UCD1+ words are grouped into 12 main categories. These categories are expressed by the 
-first atom of the word, whose possible values are:
-\begin{enumerate}
-\item {\bf arith} (arithmetics)\\ This section includes concepts involving or indicating some 
-mathematical operation performed on the primary `concept' or just the presence of an arithmetic 
-factor or operator.
-\item {\bf em} (electromagnetic spectrum)\\ This section describes the electromagnetic spectrum, 
-either in a monochromatic way or in predefined intervals. The complete list of proposed bands (in 
-seven classical regions of the electromagnetic spectrum: radio, millimetre, infrared, optical, 
-ultraviolet, x-ray and gamma- ray), can be found in the document 
-\url{https://wiki.ivoa.net/internal/IVOA/IvoaUCD/NoteEMSpectrum-20040520.html}
-\item {\bf instr} (instrument)\\ This section includes all quantities related to astronomical 
-instrumentation, e.g. detectors (plates, CCDs, etc.), spectrographs, and telescopes (including 
-observatories or missions), etc.
-\item {\bf meta} (metadata)\\ This section includes all the information that is not coming directly 
-from a measurement, and information that could not be included in other sections.
-\item {\bf obs} (observation)\\ In principle under this section should go all words describing an 
-observation (the name of the observer or PI, the observing conditions, the name of the field). In 
-practice, this section helps to identify concepts related to an observation process.
-\item {\bf phot} (photometry)\\ All the words describing photometric measures are included in this 
-section. The definitions distinguish between a flux density (flux per unit frequency interval), a 
-flux density integrated over a given electromagnetic spectrum interval (flux if expressed linearly, 
-mag if expressed by a log), or a flux expressed in counts/s (if the setup of the detector is photon 
-counting observing mode). `Colors', which are differences of magnitudes (i.e. ratios of fluxes) 
-measured in different bandpasses, are also included.
-\item {\bf phys} (physics)\\ This section includes atomic and molecular data (mainly used for 
-spectroscopy) and basic physical quantities (temperature, mass, gravity, luminosity, etc.)
-\item {\bf pos} (positional data)\\ This section describes all quantities related to the position of 
-an object on the sky:
-\begin{itemize}
-\item Angular coordinates, and projections from spherical to rectangular systems.
-\item Angular measurements in general (the angular size of an object is in this section, its linear 
-size is in the {\bf phys} section).
-\item The World Coordinate System FITS keywords.
-\end{itemize}
-\item {\bf spect} (spectral data)\\ For historical reasons, photometric data taken in narrow spectral 
-bands with instruments called spectrographs are classified as spectroscopic data. These definitions 
-should not be confused with those in the {\bf em} category. {\bf em} represents the independent 
-variable, or dispersion axis, and {\bf phot} and {\bf spect} describe the dependent measures like a 
-flux under the {\bf phot} branch, and spectral measures spectral line physical features one can 
-measure on a spectrum, for instance, under the {\bf spect} branch. 
-\item {\bf src} (source)\\ This is a rather generic section, mainly devoted to source classifications.
-Variability, orbital, and velocity data are also included in this section.
-\item {\bf stat} (statistics)\\ This section includes statistical information on measurements.
-\item {\bf time} (time)\\ Quantities related to time (age, date, period, etc.) are described in this 
-section.
-\end{enumerate}
-
-\section{Combining UCD words}
-\subsection{Goal}
-Since their definition UCDs have been used in major catalogue archives, in the definition of various
-VO protocols (SSA, SIAv2, SLAP, TAP ObsTAP, EPN-TAP, etc.) and used with success to provide semantic
-annotation for a huge collection of table columns distributed in the astronomical community.
-
-The list of terms has increased and the usage of UCD combination has become very common. This leads
-to a richer set of rules in the assigning and checking tools developed at CDS with VO partners.
-
-In order to keep the consistency in the UCD thesaurus, each rule is adjusted and weighted considering 
-the physical usage of the quantities represented in table columns, so the pertinence increases with 
-the context. Initially used for source catalogues (Vizier, Heasarc archives, etc.) in the first place, 
-they are now also used in VOTable documents for planetary data \citep{wd:epntap,erard-vespa} and all sorts of metadata.
-
-\subsection{Remarks on combination rules}
-The combination rules have been defined in the first IVOA documents defining UCD concept
-\citep{std:UCD}. They are exposed with a syntax tag given as a property of each UCD word 
-and included in the list of UCD words. See Appendix \ref{sec:list} with the tags definitions on top.
-
-They correspond to real usage of the terms in science publications and are attached to the description 
-of catalogues’ column by experimented data scientists. UCD combination also reflects the catalogues 
-build-up strategy. Errors and statistics, for instance, are provided with measurement values; measures 
-and model comparison are evaluated with error fits, precision, etc. All the scientific knowledge helps 
-to define appropriate UCD words combination.
-
-The assigning tool proposed at \url{http://cds.u-strasbg.fr/UCD/cgi-bin/descr2ucd} is based on the
-pragmatic encoding of physical quantities found in science papers and data attached to publications.
-
-\appendix
-\section{Current questions about combinations of UCDs}
-\subsection{How do UCDs differ from structured descriptions?}
-
-UCDs do not provide a structured representation of table content but the meaning or relative class 
-concept known at the time for the astronomical speciality. Therefore, the structure of words and 
-their rules for combination do not follow any object oriented paradigm, in contradiction to any 
-reference to a data model item (Utype, VO-DML type /role definition), which are dependent of a 
-defined and endorsed IVOA data model specification.
-
-\subsection{P or S syntax code: Which is the most pertinent position for a UCD word?}
-P, S and Q are the labels expressing in which position of a UCD expression a term can be used, P 
-in first place, S as suffix, and Q in both allowed position: head and tail. The UCD list defines 
-the recommended position for each word with some flexibility.
-
-P is always what matters the most to describe a quantity, i.e., the kind of property that should be 
-searched for in primary order, and the most relevant UCD words to represent a quantity.
-
-S is the code for the qualifying part of the UCD, the secondary information appended to specify 
-the first UCD term.
-
-%All the codes are explained and given in the list of UCD terms in Appendix A. 
-Examples:
-\begin{itemize}
-\item Give me all columns / all catalogues with a column having a magnitude in R: {\tt magnitude} 
-is the primary concept and band R is the secondary concept, so the ucd to search for is 
-{\tt phot.mag;em.opt.R}.
-\item Give me all columns with an error on magnitude B: here we shall use a query with ucd 
-equals to {\tt stat.error;phot.mag;em.opt.B}. Here the main concept attached to the column 
-value is error, qualified by {\tt phot.mag}, itself qualified by {\tt em.opt.B}.
-\end{itemize}
-Concatenation can apply more than one time, depending on ordering rules. See \citet{std:UCD}, section 3.3, 
-for other details.
 
 \section{List of valid words}
 \label{sec:list}
@@ -771,9 +636,153 @@ Q & {\tt time.start} & Start time/date of generic event\\
 \label{table:ucd-list}
 \end{longtable}
 
+\appendix
+
+\section{Definition of atoms and words}
+
+\subsection{Definition of atoms}
+Atoms are defined following these guidelines:
+\begin{enumerate}
+\item Abbreviations are used in contexts where their meaning is unambiguous. ({\bf ra}, {\bf dec} are 
+acceptable, but {\bf t} is ambiguous: {\bf time} and {\bf temperature} are used instead.)
+\item Atoms are not hyphenated. The separation is marked by a capital letter to help readability 
+(position angle = {\bf posAng}) unless the composed word has a well- known acronym (signal to noise ratio = 
+{\bf snr}) or short form (standard deviation = {\bf stdev}). There are only two exceptions to this rule: 
+(i) the X-ray band ({\bf em.X-ray}) and (ii) the frequency / wavelength intervals defining regions of the 
+e.m. spectrum (e.g., {\bf em.radio.3-6GHz}).
+\end{enumerate}
+
+\subsection{Definition of words}
+\label{sec:words}
+The list of UCD1+ words presented in this document was initially generated applying the rules and 
+recommendations of PR-UCD-20040823 to catalogues/tables in VizieR. The original motivation was to 
+transform old UCD1 into an improved version, trying to build a list of combinations of new words that 
+could describe all the existing UCD1 terms.
+
+The list of UCD1+ words is maintained by the UCD Scientific Board, following the procedure defined 
+in the UCD Recommendation document \citep{2005ivoa.spec.0819D} and described in detail in 
+\citet{2006ivoa.spec.0528M}\footnote{An earlier draft on UCD building, still at 
+\url{http://www.ivoa.net/documents/PR/UCD/UCD-20040823.html} includes more details 
+about the process of the change from the earlier ``UCD1'' standard, and may be of historical interest, or 
+provide more rationale.}.
+
+\section{The structure of the UCD1+ tree}
+All existing UCD1+ words are grouped into 12 main categories. These categories are expressed by the 
+first atom of the word, whose possible values are:
+\begin{enumerate}
+\item {\bf arith} (arithmetics)\\ This section includes concepts involving or indicating some 
+mathematical operation performed on the primary `concept' or just the presence of an arithmetic 
+factor or operator.
+\item {\bf em} (electromagnetic spectrum)\\ This section describes the electromagnetic spectrum, 
+either in a monochromatic way or in predefined intervals. The complete list of proposed bands (in 
+seven classical regions of the electromagnetic spectrum: radio, millimetre, infrared, optical, 
+ultraviolet, x-ray and gamma- ray), can be found in the document 
+\url{https://wiki.ivoa.net/internal/IVOA/IvoaUCD/NoteEMSpectrum-20040520.html}
+\item {\bf instr} (instrument)\\ This section includes all quantities related to astronomical 
+instrumentation, e.g. detectors (plates, CCDs, etc.), spectrographs, and telescopes (including 
+observatories or missions), etc.
+\item {\bf meta} (metadata)\\ This section includes all the information that is not coming directly 
+from a measurement, and information that could not be included in other sections.
+\item {\bf obs} (observation)\\ In principle under this section should go all words describing an 
+observation (the name of the observer or PI, the observing conditions, the name of the field). In 
+practice, this section helps to identify concepts related to an observation process.
+\item {\bf phot} (photometry)\\ All the words describing photometric measures are included in this 
+section. The definitions distinguish between a flux density (flux per unit frequency interval), a 
+flux density integrated over a given electromagnetic spectrum interval (flux if expressed linearly, 
+mag if expressed by a log), or a flux expressed in counts/s (if the setup of the detector is photon 
+counting observing mode). `Colors', which are differences of magnitudes (i.e. ratios of fluxes) 
+measured in different bandpasses, are also included.
+\item {\bf phys} (physics)\\ This section includes atomic and molecular data (mainly used for 
+spectroscopy) and basic physical quantities (temperature, mass, gravity, luminosity, etc.)
+\item {\bf pos} (positional data)\\ This section describes all quantities related to the position of 
+an object on the sky:
+\begin{itemize}
+\item Angular coordinates, and projections from spherical to rectangular systems.
+\item Angular measurements in general (the angular size of an object is in this section, its linear 
+size is in the {\bf phys} section).
+\item The World Coordinate System FITS keywords.
+\end{itemize}
+\item {\bf spect} (spectral data)\\ For historical reasons, photometric data taken in narrow spectral 
+bands with instruments called spectrographs are classified as spectroscopic data. These definitions 
+should not be confused with those in the {\bf em} category. {\bf em} represents the independent 
+variable, or dispersion axis, and {\bf phot} and {\bf spect} describe the dependent measures like a 
+flux under the {\bf phot} branch, and spectral measures spectral line physical features one can 
+measure on a spectrum, for instance, under the {\bf spect} branch. 
+\item {\bf src} (source)\\ This is a rather generic section, mainly devoted to source classifications.
+Variability, orbital, and velocity data are also included in this section.
+\item {\bf stat} (statistics)\\ This section includes statistical information on measurements.
+\item {\bf time} (time)\\ Quantities related to time (age, date, period, etc.) are described in this 
+section.
+\end{enumerate}
+
+\section{Combining UCD words}
+\subsection{Goal}
+Since their definition UCDs have been used in major catalogue archives, in the definition of various
+VO protocols (SSA, SIAv2, SLAP, TAP ObsTAP, EPN-TAP, etc.) and used with success to provide semantic
+annotation for a huge collection of table columns distributed in the astronomical community.
+
+The list of terms has increased and the usage of UCD combination has become very common. This leads
+to a richer set of rules in the assigning and checking tools developed at CDS with VO partners.
+
+In order to keep the consistency in the UCD thesaurus, each rule is adjusted and weighted considering 
+the physical usage of the quantities represented in table columns, so the pertinence increases with 
+the context. Initially used for source catalogues (Vizier, Heasarc archives, etc.) in the first place, 
+they are now also used in VOTable documents for planetary data \citep{wd:epntap,erard-vespa} and all sorts of metadata.
+
+\subsection{Remarks on combination rules}
+The combination rules have been defined in the first IVOA documents defining UCD concept
+\citep{2005ivoa.spec.0819D}. They are exposed with a syntax tag given as a property of each UCD word 
+and included in the list of UCD words. See Appendix \ref{sec:list} with the tags definitions on top.
+
+They correspond to real usage of the terms in science publications and are attached to the description 
+of catalogues’ column by experimented data scientists. UCD combination also reflects the catalogues 
+build-up strategy. Errors and statistics, for instance, are provided with measurement values; measures 
+and model comparison are evaluated with error fits, precision, etc. All the scientific knowledge helps 
+to define appropriate UCD words combination.
+
+The assigning tool proposed at \url{http://cds.u-strasbg.fr/UCD/cgi-bin/descr2ucd} is based on the
+pragmatic encoding of physical quantities found in science papers and data attached to publications.
+
+\section{Current questions about combinations of UCDs}
+\subsection{How do UCDs differ from structured descriptions?}
+
+UCDs do not provide a structured representation of table content but the meaning or relative class 
+concept known at the time for the astronomical speciality. Therefore, the structure of words and 
+their rules for combination do not follow any object oriented paradigm, in contradiction to any 
+reference to a data model item (Utype, VO-DML type /role definition), which are dependent of a 
+defined and endorsed IVOA data model specification.
+
+\subsection{P or S syntax code: Which is the most pertinent position for a UCD word?}
+P, S and Q are the labels expressing in which position of a UCD expression a term can be used, P 
+in first place, S as suffix, and Q in both allowed position: head and tail. The UCD list defines 
+the recommended position for each word with some flexibility.
+
+P is always what matters the most to describe a quantity, i.e., the kind of property that should be 
+searched for in primary order, and the most relevant UCD words to represent a quantity.
+
+S is the code for the qualifying part of the UCD, the secondary information appended to specify 
+the first UCD term.
+
+%All the codes are explained and given in the list of UCD terms in Appendix A. 
+Examples:
+\begin{itemize}
+\item Give me all columns / all catalogues with a column having a magnitude in R: {\tt magnitude} 
+is the primary concept and band R is the secondary concept, so the ucd to search for is 
+{\tt phot.mag;em.opt.R}.
+\item Give me all columns with an error on magnitude B: here we shall use a query with ucd 
+equals to {\tt stat.error;phot.mag;em.opt.B}. Here the main concept attached to the column 
+value is error, qualified by {\tt phot.mag}, itself qualified by {\tt em.opt.B}.
+\end{itemize}
+Concatenation can apply more than one time, depending on ordering rules. See \citet{2005ivoa.spec.0819D}, section 3.3, 
+for other details.
+
+
+
 \section{Changes from previous versions}
 
 \subsection{Changes from REC v1.3 following RFM}
+The document title has been updated and the document sections have been reorganised to focus on 
+the list of terms, moving UCD1+ standard reminders to Appendix sections. 
 
 The modifications decided during the UCD1+ list v1.3 
 RFM\footnote{\url{https://wiki.ivoa.net/twiki/bin/view/IVOA/UCDList_1-3_RFM}} process are presented below.
