@@ -68,3 +68,5 @@ _This process has been described and demonstrated during the IVOA Interoperabili
 This work is licensed under a
 [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
   
+# test data directory for solar data ( coll. V. Delouille , B. Cecconni, M.Louys, etc.)
+Include testdata to study mapping of ucds for solar data , and possible inclusion of new terms for sloar data collections 
