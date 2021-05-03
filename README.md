@@ -71,4 +71,4 @@ This work is licensed under a
 # Test data directory for solar data 
 Materials from solar data community (coll. V. Delouille, B. Cecconni, etc.)
 
-Include testdata to study mapping of ucds for solar data , and possible inclusion of new terms for sloar data collections 
+Include testdata to study mapping of ucds for solar data , and possible inclusion of new terms for solar data collections 
