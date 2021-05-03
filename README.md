@@ -69,5 +69,6 @@ This work is licensed under a
 [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
   
 # Test data directory for solar data 
-materials from solar data community (coll. V. Delouille, B. Cecconni, etc.)
+Materials from solar data community (coll. V. Delouille, B. Cecconni, etc.)
+
 Include testdata to study mapping of ucds for solar data , and possible inclusion of new terms for sloar data collections 
