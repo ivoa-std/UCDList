@@ -29,6 +29,6 @@ FIGURES =
 VECTORFIGURES = 
 
 # Additional files to distribute (e.g., CSS, schema files, examples...)
-AUX_FILES = localrefs.bib
+AUX_FILES = localrefs.bib ucd-list.txt
 
 include ivoatex/Makefile
