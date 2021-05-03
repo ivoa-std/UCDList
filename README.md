@@ -62,7 +62,7 @@ DOC) should be stored in this repository.
 _This process has been described and demonstrated during the IVOA Interoperability Meeting of Oct. 2019 in Groningen ; see [slides](https://wiki.ivoa.net/internal/IVOA/InterOpOct2019GitHub/IVOA_Github.pdf))_
 
 # Test data directory for solar data 
-Materials from solar data community (coll. V. Delouille, B. Cecconni, etc.)
+Materials from solar data community (coll. V. Delouille, B. Cecconi, etc.)
 
 Include testdata to study mapping of ucds for solar data , and possible inclusion of new terms for solar data collections 
 
