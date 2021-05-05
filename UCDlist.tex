@@ -115,7 +115,7 @@ They specialize the combination rules:
 
 For typographic reasons some long UCD atoms are printed on two
 lines in the following table.  In these cases, \texttt{some.long...
-...ucd.x} is to be read as \texttt{some.log.ucd.x}.
+...ucd.x} is to be read as \texttt{some.long.ucd.x}.
 
 \newpage
 
@@ -705,11 +705,7 @@ transform old UCD1 into an improved version, trying to build a list of combinati
 could describe all the existing UCD1 terms.
 
 The list of UCD1+ words is maintained by the UCD Scientific Board, following the procedure defined 
-in the UCD Recommendation document \citep{2005ivoa.spec.0819D} and described in detail in 
-\citet{2006ivoa.spec.0528M}\footnote{An earlier draft on UCD building, still at 
-\url{http://www.ivoa.net/documents/PR/UCD/UCD-20040823.html} includes more details 
-about the process of the change from the earlier ``UCD1'' standard, and may be of historical interest, or 
-provide more rationale.}.
+in the UCD Recommendation document \citep{2019ivoa.spec.1007G}.
 
 \section{The structure of the UCD1+ tree}
 All existing UCD1+ words are grouped into 12 main categories. These categories are expressed by the 
@@ -740,7 +736,7 @@ measured in different bandpasses, are also included.
 \item {\bf phys} (physics)\\ This section includes atomic and molecular data (mainly used for 
 spectroscopy) and basic physical quantities (temperature, mass, gravity, luminosity, etc.)
 \item {\bf pos} (positional data)\\ This section describes all quantities related to the position of 
-an object on the sky:
+an object on the sky, or on a celestial body:
 \begin{itemize}
 \item Angular coordinates, and projections from spherical to rectangular systems.
 \item Angular measurements in general (the angular size of an object is in this section, its linear 
@@ -748,11 +744,10 @@ size is in the {\bf phys} section).
 \item The World Coordinate System FITS keywords.
 \end{itemize}
 \item {\bf spect} (spectral data)\\ For historical reasons, photometric data taken in narrow spectral 
-bands with instruments called spectrographs are classified as spectroscopic data. These definitions 
-should not be confused with those in the {\bf em} category. {\bf em} represents the independent 
-variable, or dispersion axis, and {\bf phot} and {\bf spect} describe the dependent measures like a 
-flux under the {\bf phot} branch, and spectral measures spectral line physical features one can 
-measure on a spectrum, for instance, under the {\bf spect} branch. 
+bands with instruments called spectrographs are classified as spectroscopic data ({\bf spect}). These 
+definitions should not be confused with those in the {\bf em} category: {\bf em} represents the independent 
+variable, or dispersion axis; whereas {\bf phot} and {\bf spect} describe dependent variables, like a 
+flux density under the {\bf phot} branch, or a spectral line intensity in the {\bf spect} branch.  
 \item {\bf src} (source)\\ This is a rather generic section, mainly devoted to source classifications.
 Variability, orbital, and velocity data are also included in this section.
 \item {\bf stat} (statistics)\\ This section includes statistical information on measurements.
@@ -863,7 +858,7 @@ Q & {\tt phys.polarization.coherency} & Matrix of the correlation between compon
 \end{longtable}
 \subsubsection*{Clarification}
 %text improvement 
-Clarified position rules for syntax code E, C, V in Appendix B.  
+Clarified position rules for syntax code E, C, V in Section \ref{sec:list}.  
 
 \subsection{Changes from PR v1.3-2018 following TCG comments}
 \subsubsection*{Update of definitions} 
