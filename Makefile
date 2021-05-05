@@ -7,7 +7,7 @@ DOCNAME = UCDlist
 DOCVERSION = 1.4
 
 # Publication date, ISO format; update manually for "releases"
-DOCDATE = 2021-04-06
+DOCDATE = 2021-04-30
 
 # What is it you're writing: NOTE, WD, PR, REC, PEN, or EN
 DOCTYPE = PEN
@@ -29,6 +29,6 @@ FIGURES =
 VECTORFIGURES = 
 
 # Additional files to distribute (e.g., CSS, schema files, examples...)
-AUX_FILES = localrefs.bib
+AUX_FILES = localrefs.bib ucd-list.txt
 
 include ivoatex/Makefile
