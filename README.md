@@ -1,4 +1,4 @@
-![UCDList version](https://img.shields.io/badge/UCDList-REC--1.3-yellow.svg)
+![UCDList version](https://img.shields.io/badge/UCDList-EN--1.4-yellow.svg)
 [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)](http://creativecommons.org/licenses/by/4.0/)
 
 # UCDList
@@ -13,7 +13,8 @@ and used with success to provide semantic annotation for a huge collection of
 table columns distributed in the astronomical community.
 
 This version contains new UCD words discussed and accepted by the Semantics 
-Working Group during the UCD list v1.3 RFM.
+Working Group during the [UCD list v1.3 RFM](https://wiki.ivoa.net/twiki/bin/view/IVOA/UCDList_1-3_RFM) 
+(Request For Modifications) and [v1.4 RFM](https://wiki.ivoa.net/twiki/bin/view/IVOA/UCDList_1-4_RFM).
 
 The list of UCD1+ words is maintained by the UCD Scientific Board, following the 
 procedure defined in the [UCDList 
@@ -25,9 +26,9 @@ Recommandation](http://www.ivoa.net/documents/latest/UCDlistMaintenance.html).
 ## Status?
 
 The last stable version is
-**[REC-1.3](http://www.ivoa.net/documents/UCD1+/20180527/index.html)**.
+**[EN-1.4](https://ivoa.net/documents/UCD1+/20210430/index.htmll)**.
 
-Next version will be 1.4, as an _Endorsed Note_. It is prepared in this reporsitory. 
+Next version will be 1.5, as an _Endorsed Note_. It is prepared in this reporsitory. 
  _It is not yet finalized and so, should not be considered
 yet as stable for operational implementation._
 
@@ -60,11 +61,6 @@ DOC) should be stored in this repository.
 6. Wait for someone to review your Pull Request and accept it
 
 _This process has been described and demonstrated during the IVOA Interoperability Meeting of Oct. 2019 in Groningen ; see [slides](https://wiki.ivoa.net/internal/IVOA/InterOpOct2019GitHub/IVOA_Github.pdf))_
-
-# Test data directory for solar data 
-Materials from solar data community (coll. V. Delouille, B. Cecconi, etc.)
-
-Include testdata to study mapping of ucds for solar data , and possible inclusion of new terms for solar data collections 
 
 # License 
 
