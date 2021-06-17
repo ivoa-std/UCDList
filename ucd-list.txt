@@ -4,9 +4,9 @@ P | arith.factor                 	|  Numerical factor
 P | arith.grad                   	|  Gradient                                                                      
 P | arith.rate                   	|  Rate (per time unit)                                                          
 S | arith.ratio                  	|  Ratio between two quantities described by the same UCD                        
-S | arith.squared                    	|  Squared quantity 
-S | arith.sum				|  Summed or integrated quantity
-S | arith.variation                     |  Generic variation of a quantity 
+S | arith.squared                	|  Squared quantity 
+S | arith.sum			              	|  Summed or integrated quantity
+S | arith.variation               |  Generic variation of a quantity 
 Q | arith.zp                     	|  Zero point                                                                    
 S | em                           	|  Electromagnetic spectrum                                                      
 S | em.IR                        	|  Infrared part of the spectrum                                                 
@@ -48,7 +48,7 @@ S | em.line.Hgamma               	|  H-gamma line
 S | em.line.Hdelta               	|  H-delta line                                                                  
 S | em.line.Brgamma              	|  Bracket gamma line                                                            
 S | em.line.OIII                 	|  [OIII] line whose rest wl is 500.7 nm 
-S | em.line.CO                		|  CO radio line,  e.g 12CO(1-0) at 115GHz                                       
+S | em.line.CO                		|  CO radio line,  e.g. 12CO(1-0) at 115GHz                                       
 S | em.mm                        	|  Millimetric/submillimetric part of the spectrum                               
 S | em.mm.30-50GHz               	|  Millimetric between 30 and 50 GHz                                             
 S | em.mm.50-100GHz              	|  Millimetric between 50 and 100 GHz                                            
@@ -112,7 +112,7 @@ Q | instr.skyLevel               	|  Sky level
 Q | instr.skyTemp                	|  Sky temperature                                                               
 Q | instr.tel                    	|  Telescope                                                                     
 Q | instr.tel.focalLength        	|  Telescope focal length  
-S | instr.voxel				|  Related to a voxel (n-D volume element with n>2)                                                        
+S | instr.voxel				            |  Related to a voxel (n-D volume element with n>2)                                                        
 P | meta                         	|  Metadata                                                                      
 P | meta.abstract                	|  Abstract (of paper, proposal, etc.)                                             
 P | meta.bib                     	|  Bibliographic reference                                                       
@@ -123,7 +123,7 @@ P | meta.bib.journal             	|  Journal name
 P | meta.bib.page                	|  Page number                                                                   
 P | meta.bib.volume              	|  Volume number                                                                 
 Q | meta.calibLevel              	|  Processing/calibration level                                                  
-Q | meta.checksum 			|  Numerical signature of digital data
+Q | meta.checksum 			          |  Numerical signature of digital data
 P | meta.code                    	|  Code or flag                                                                  
 P | meta.code.class              	|  Classification code                                                           
 P | meta.code.error              	|  Limit uncertainty error flag                                                  
@@ -150,11 +150,11 @@ S | meta.modelled                	|  Quantity was produced by a model
 P | meta.note                    	|  Note or remark (longer than a code or flag)                                   
 P | meta.number                  	|  Number (of things; e.g. nb of object in an image)                             
 S | meta.preview              		|  Related to a preview operation for a dataset     
-Q | meta.query              		|  A query posed to an information system or database or a property of it                                                                                                   
+Q | meta.query              		  |  A query posed to an information system or database or a property of it                                                                                                   
 P | meta.record                  	|  Record number                                                                 
 P | meta.ref                     	|  Reference or origin                                                          
-P | meta.ref.doi		        |  DOI identifier (dereferenceable)
-Q | meta.ref.ivoid                      |  Identifier as recommended  in the IVOA  (dereferenceable)
+P | meta.ref.doi		              |  DOI identifier (dereferenceable)
+Q | meta.ref.ivoid                |  Identifier as recommended  in the IVOA  (dereferenceable)
 P | meta.ref.ivorn               	|  Identifier defined as IVORN, VO Resource Name (ivo://)  (deprecated)                                    
 P | meta.ref.uri                 	|  URI, universal resource identifier                                             
 P | meta.ref.url                 	|  URL, web address                                                              
@@ -208,7 +208,7 @@ Q | phys.SFR                     	|  Star formation rate
 E | phys.absorption              	|  Extinction or absorption along the line of sight                              
 Q | phys.absorption.coeff        	|  Absorption coefficient (e.g. in a spectral line)                              
 Q | phys.absorption.gal          	|  Galactic extinction                                                           
-Q | phys.absorption.opticalDepth   	|  Optical depth                                                                 
+Q | phys.absorption.opticalDepth 	|  Optical depth                                                                 
 Q | phys.abund                   	|  Abundance                                                                     
 Q | phys.abund.Fe                	|  Fe/H abundance                                                                
 Q | phys.abund.X                 	|  Hydrogen abundance                                                            
@@ -257,25 +257,25 @@ S | phys.composition             	|  Quantities related to composition of object
 Q | phys.composition.massLightRatio  	|  Mass to light ratio                                                      
 Q | phys.composition.yield       	|  Mass yield                                                                    
 S | phys.cosmology               	|  Related to cosmology                                                          
-Q | phys.current 			|  Electric current
-Q | phys.current.density 		|  Electric current density
+Q | phys.current 			            |  Electric current
+Q | phys.current.density 		      |  Electric current density
 Q | phys.damping                 	|  Generic damping quantities                                                     
 Q | phys.density                 	|  Density (of mass, electron, ...)                                              
 Q | phys.density.phaseSpace      	|  Density in the phase space                                                     
 Q | phys.dielectric              	|  Complex dielectric function                                                   
 Q | phys.dispMeasure             	|  Dispersion measure                                                            
 S | phys.dust                    	|  Relative to dust                                                               
-Q | phys.electCharge 			|  Electric charge
+Q | phys.electCharge 			        |  Electric charge
 V | phys.electField              	|  Electric field                                                                
 S | phys.electron                	|  Electron                                                                      
 Q | phys.electron.degen          	|  Electron degeneracy parameter                                                 
 Q | phys.emissMeasure            	|  Emission measure                                                              
 Q | phys.emissivity              	|  Emissivity                                                                    
 Q | phys.energy                  	|  Energy                                                                        
-Q | phys.energy.Gibbs          		|  Gibbs (free) energy or free enthalpy   [ G=H –TS ] 
-Q | phys.energy.Helmholtz          	|  Helmholtz free energy [ A=U–TS ]
+Q | phys.energy.Gibbs          		|  Gibbs (free) energy or free enthalpy   [ G=H-TS ] 
+Q | phys.energy.Helmholtz        	|  Helmholtz free energy [ A=U-TS ]
 Q | phys.energy.density          	|  Energy density 
-Q | phys.enthalpy          		|  Enthalpy  [ H=U+pv ]                                                    
+Q | phys.enthalpy          	    	|  Enthalpy  [ H=U+pv ]                                                    
 Q | phys.entropy                 	|  Entropy                                                                        
 Q | phys.eos                     	|  Equation of state                                                             
 Q | phys.excitParam              	|  Excitation parameter U                                                        
@@ -293,7 +293,7 @@ E | phys.magAbs                  	|  Absolute magnitude
 Q | phys.magAbs.bol              	|  Bolometric absolute magnitude                                                 
 V | phys.magField                	|  Magnetic field                                                                
 Q | phys.mass                    	|  Mass                                                                          
-Q | phys.mass.inertiaMomentum		|  Momentum of inertia or rotational inertia
+Q | phys.mass.inertiaMomentum		  |  Momentum of inertia or rotational inertia
 Q | phys.mass.loss               	|  Mass loss                                                                     
 Q | phys.mol                     	|  Molecular data                                                                
 Q | phys.mol.dipole              	|  Molecular dipole                                                              
@@ -302,7 +302,7 @@ Q | phys.mol.dipole.magnetic     	|  Molecular magnetic dipole moment
 Q | phys.mol.dissociation        	|  Molecular dissociation                                                        
 Q | phys.mol.formationHeat       	|  Formation heat for molecules                                                  
 Q | phys.mol.quadrupole          	|  Molecular quadrupole                                                          
-Q | phys.mol.quadrupole.electric   	|  Molecular electric quadrupole moment                                          
+Q | phys.mol.quadrupole.electric  |  Molecular electric quadrupole moment                                          
 S | phys.mol.rotation            	|  Molecular rotation                                                            
 S | phys.mol.vibration           	|  Molecular vibration                                                           
 S | phys.particle                	|  Related to physical particles                                                                              
@@ -324,8 +324,8 @@ Q | phys.polarization.stokes.V 		|  Stokes polarization coefficient V
 Q | phys.potential               	|  Potential (electric, gravitational, etc.)                                      
 Q | phys.pressure                	|  Pressure                                                                      
 Q | phys.recombination.coeff     	|  Recombination coefficient                                                     
-Q | phys.reflectance 			|  Radiance factor (received radiance divided by input radiance)
-Q | phys.reflectance.bidirectional 	|  Bidirectional reflectance
+Q | phys.reflectance 			        |  Radiance factor (received radiance divided by input radiance)
+Q | phys.reflectance.bidirectional|  Bidirectional reflectance
 Q | phys.reflectance.bidirectional.df   |  Bidirectional reflectance distribution function
 Q | phys.reflectance.factor    		|  Reflectance normalized per direction cosine of incidence angle
 Q | phys.refractIndex            	|  Refraction index                                                              
@@ -350,7 +350,7 @@ Q | phys.veloc.orbital           	|  Orbital velocity
 Q | phys.veloc.pulsat            	|  Pulsational velocity                                                          
 Q | phys.veloc.rotat             	|  Rotational velocity                                                           
 Q | phys.veloc.transverse        	|  Transverse / tangential velocity                                              
-S | phys.virial                  	|  Related to virial quantities (mass, radius, ..)                                
+S | phys.virial                  	|  Related to virial quantities (mass, radius, ...)                                
 Q | phys.volume                  	|  Volume (in cubic units)                                                       
 Q | pos                          	|  Position and coordinates                                                      
 Q | pos.angDistance              	|  Angular distance, elongation                                                  
@@ -359,10 +359,10 @@ Q | pos.az                       	|  Position in alt-azimutal frame
 Q | pos.az.alt                   	|  Alt-azimutal altitude                                                         
 Q | pos.az.azi                   	|  Alt-azimutal azimut                                                           
 Q | pos.az.zd                    	|  Alt-azimutal zenith distance                                                  
-Q | pos.azimuth 			|  Azimuthal angle in a generic reference plane
+Q | pos.azimuth 			            |  Azimuthal angle in a generic reference plane
 S | pos.barycenter               	|  Barycenter                                                                    
-S | pos.bodycentric 			|  Body-centric related coordinate
-S | pos.bodygraphic 			|  Body-graphic related coordinate
+S | pos.bodycentric 			        |  Body-centric related coordinate
+S | pos.bodygraphic 			        |  Body-graphic related coordinate
 S | pos.bodyrc                   	|  Body related coordinates                                                      
 Q | pos.bodyrc.alt              	|  Body related coordinate (altitude on the body)                               
 Q | pos.bodyrc.lat               	|  Body related coordinate (latitude on the body)                               
@@ -371,12 +371,12 @@ S | pos.cartesian                	|  Cartesian (rectangular) coordinates
 Q | pos.cartesian.x              	|  Cartesian coordinate along the x-axis                                         
 Q | pos.cartesian.y              	|  Cartesian coordinate along the y-axis                                         
 Q | pos.cartesian.z              	|  Cartesian coordinate along the z-axis        
-S | pos.centroid            		|  Related to centroid position 
+S | pos.centroid            		  |  Related to centroid position 
 S | pos.cmb                      	|  Cosmic Microwave Background reference frame                                   
-S | pos.cylindrical 			|  Related to cylindrical coordinates
-Q | pos.cylindrical.azi 		|  Azimuthal angle around z-axis (cylindrical coordinates)
-Q | pos.cylindrical.r 			|  Radial distance from z-axis (cylindrical coordinates)
-Q | pos.cylindrical.z 			|  Height or altitude from reference plane (cylindrical coordinates)
+S | pos.cylindrical 			        |  Related to cylindrical coordinates
+Q | pos.cylindrical.azi 		      |  Azimuthal angle around z-axis (cylindrical coordinates)
+Q | pos.cylindrical.r 			      |  Radial distance from z-axis (cylindrical coordinates)
+Q | pos.cylindrical.z 			      |  Height or altitude from reference plane (cylindrical coordinates)
 Q | pos.dirCos                   	|  Direction cosine                                                              
 V | pos.distance                 	|  Linear distance                                                               
 S | pos.earth                    	|  Coordinates related to Earth                                                  
@@ -386,7 +386,7 @@ Q | pos.earth.lon                	|  Longitude on Earth
 S | pos.ecliptic                 	|  Ecliptic coordinates                                                          
 Q | pos.ecliptic.lat             	|  Ecliptic latitude                                                             
 Q | pos.ecliptic.lon             	|  Ecliptic longitude                                                            
-Q | pos.emergenceAng 			|  Emergence angle of optical ray on an interface
+Q | pos.emergenceAng 			        |  Emergence angle of optical ray on an interface
 S | pos.eop                      	|  Earth orientation parameters                                                  
 Q | pos.ephem                    	|  Ephemeris                                                                     
 Q | pos.eq                       	|  Equatorial coordinates                                                        
@@ -404,28 +404,28 @@ S | pos.geocentric               	|  Geocentric coordinate system
 Q | pos.healpix                  	|  Hierarchical Equal Area IsoLatitude Pixelization                              
 S | pos.heliocentric             	|  Heliocentric position coordinate (solar system bodies)                        
 Q | pos.HTM                      	|  Hierarchical Triangular Mesh                                                  
-Q | pos.incidenceAng 			|  Incidence angle of optical ray on an interface
+Q | pos.incidenceAng 			        |  Incidence angle of optical ray on an interface
 S | pos.lambert                  	|  Lambert projection                                                            
 S | pos.lg                       	|  Local Group reference frame                                                   
 S | pos.lsr                      	|  Local Standard of Rest reference frame                                        
 Q | pos.lunar                    	|  Lunar coordinates                                                             
 Q | pos.lunar.occult             	|  Occultation by lunar limb                                                     
 Q | pos.nutation                 	|  Nutation (of a body)                                                           
-Q | pos.outline				|  Set of points outlining a region (contour)
+Q | pos.outline				            |  Set of points outlining a region (contour)
 Q | pos.parallax                 	|  Parallax                                                                      
 Q | pos.parallax.dyn             	|  Dynamical parallax                                                            
 Q | pos.parallax.phot            	|  Photometric parallaxes                                                        
 Q | pos.parallax.spect           	|  Spectroscopic parallax                                                        
 Q | pos.parallax.trig            	|  Trigonometric parallax                                                        
-Q | pos.phaseAng                 	|  Phase angle, e.g. elongation of earth from sun as seen from a third cel. object 
+Q | pos.phaseAng                 	|  Phase angle, e.g. elongation of earth from sun as seen from a third celestial object 
 V | pos.pm                       	|  Proper motion                                                                 
 Q | pos.posAng                   	|  Position angle of a given vector                                              
 V | pos.precess                  	|  Precession (in equatorial coordinates)                                        
-Q | pos.resolution 			|  Spatial linear resolution (not angular)
-S | pos.spherical 			|  Related to spherical coordinates
-Q | pos.spherical.azi 			|  Azimuthal angle (spherical coordinates)
-Q | pos.spherical.colat 		|  Polar or Colatitude angle (spherical coordinates)
-Q | pos.spherical.r 			|  Radial distance or radius (spherical coordinates)
+Q | pos.resolution 			          |  Spatial linear resolution (not angular)
+S | pos.spherical 			          |  Related to spherical coordinates
+Q | pos.spherical.azi 			      |  Azimuthal angle (spherical coordinates)
+Q | pos.spherical.colat 		      |  Polar or Colatitude angle (spherical coordinates)
+Q | pos.spherical.r 			        |  Radial distance or radius (spherical coordinates)
 S | pos.supergalactic            	|  Supergalactic coordinates                                                     
 Q | pos.supergalactic.lat        	|  Latitude in supergalactic coordinates                                         
 Q | pos.supergalactic.lon        	|  Longitude in supergalactic coordinates                                        
@@ -492,12 +492,12 @@ E | src.var.amplitude            	|  Amplitude of variation
 Q | src.var.index                	|  Variability index                                                             
 Q | src.var.pulse                	|  Pulse                                                                         
 Q | stat                         	|  Statistical parameters                                                        
-Q | stat.asymmetry			|  Measure of asymmetry                                                 
+Q | stat.asymmetry			          |  Measure of asymmetry                                                 
 P | stat.correlation             	|  Correlation between two parameters                                            
 P | stat.covariance              	|  Covariance between two parameters                                             
 P | stat.error                   	|  Statistical error                                                             
 P | stat.error.sys               	|  Systematic error                                                              
-Q | stat.filling                 	|  Filling factor (volume, time, ..)                                              
+Q | stat.filling                 	|  Filling factor (volume, time, ...)                                              
 Q | stat.fit                     	|  Fit                                                                           
 P | stat.fit.chi2                	|  Chi2                                                                          
 P | stat.fit.dof                 	|  Degrees of freedom                                                            
@@ -507,8 +507,8 @@ Q | stat.fit.param               	|  Parameter of fit
 P | stat.fit.residual            	|  Residual fit  
 Q | stat.Fourier                 	|  Fourier coefficient                                                           
 Q | stat.Fourier.amplitude       	|  Amplitude of Fourier coefficient 
-S | stat.fwhm				|  Full width at half maximum                              
-S | stat.interval                     	|  Generic interval between two limits (defined as a pair of values)                                                                                                                  
+S | stat.fwhm				              |  Full width at half maximum                              
+S | stat.interval                	|  Generic interval between two limits (defined as a pair of values)                                                                                                                  
 P | stat.likelihood              	|  Likelihood                                                                    
 S | stat.max                     	|  Maximum or upper limit                                                        
 S | stat.mean                    	|  Mean, average value                                                           
@@ -516,8 +516,8 @@ S | stat.median                  	|  Median value
 S | stat.min                     	|  Minimum or lowest limit                                                       
 Q | stat.param                   	|  Parameter                                                                     
 Q | stat.probability             	|  Probability                                                                   
-P | stat.rank				|  Rank or order in list of sorted values  
-P | stat.rms				|  Root mean square as square root of sum of squared values or quadratic mean 
+P | stat.rank				              |  Rank or order in list of sorted values  
+P | stat.rms				              |  Root mean square as square root of sum of squared values or quadratic mean 
 P | stat.snr                     	|  Signal to noise ratio                                                         
 P | stat.stdev                   	|  Standard deviation as the square root of the variance                                                           
 S | stat.uncalib                 	|  Qualifier of a generic uncalibrated quantity                                   
@@ -544,4 +544,4 @@ Q | time.relax                   	|  Relaxation time
 Q | time.release                 	|  The time/date data is available to the public                                  
 Q | time.resolution              	|  Time resolution                                                               
 Q | time.scale                   	|  Timescale
-Q | time.start				|  Start time/date of generic event
+Q | time.start				            |  Start time/date of generic event
