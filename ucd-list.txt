@@ -48,7 +48,7 @@ S | em.line.Hgamma                    |  H-gamma line
 S | em.line.Hdelta                    |  H-delta line                                                                  
 S | em.line.Brgamma                   |  Bracket gamma line                                                            
 S | em.line.OIII                      |  [OIII] line whose rest wl is 500.7 nm 
-S | em.line.CO                        |  CO radio line,  e.g 12CO(1-0) at 115GHz                                       
+S | em.line.CO                        |  CO radio line, e.g., 12CO(1-0) at 115GHz                                       
 S | em.mm                             |  Millimetric/submillimetric part of the spectrum                               
 S | em.mm.30-50GHz                    |  Millimetric between 30 and 50 GHz                                             
 S | em.mm.50-100GHz                   |  Millimetric between 50 and 100 GHz                                            
@@ -272,8 +272,8 @@ Q | phys.electron.degen               |  Electron degeneracy parameter
 Q | phys.emissMeasure                 |  Emission measure                                                              
 Q | phys.emissivity                   |  Emissivity                                                                    
 Q | phys.energy                       |  Energy                                                                        
-Q | phys.energy.Gibbs                 |  Gibbs (free) energy or free enthalpy   [ G=H –TS ] 
-Q | phys.energy.Helmholtz             |  Helmholtz free energy [ A=U–TS ]
+Q | phys.energy.Gibbs                 |  Gibbs (free) energy or free enthalpy   [ G=H-TS ] 
+Q | phys.energy.Helmholtz             |  Helmholtz free energy [ A=U-TS ]
 Q | phys.energy.density               |  Energy density 
 Q | phys.enthalpy                     |  Enthalpy  [ H=U+pv ]                                                    
 Q | phys.entropy                      |  Entropy                                                                        
@@ -350,7 +350,7 @@ Q | phys.veloc.orbital                |  Orbital velocity
 Q | phys.veloc.pulsat                 |  Pulsational velocity                                                          
 Q | phys.veloc.rotat                  |  Rotational velocity                                                           
 Q | phys.veloc.transverse             |  Transverse / tangential velocity                                              
-S | phys.virial                       |  Related to virial quantities (mass, radius, ..)                                
+S | phys.virial                       |  Related to virial quantities (mass, radius, ...)                                
 Q | phys.volume                       |  Volume (in cubic units)                                                       
 Q | pos                               |  Position and coordinates                                                      
 Q | pos.angDistance                   |  Angular distance, elongation                                                  
@@ -417,7 +417,7 @@ Q | pos.parallax.dyn                  |  Dynamical parallax
 Q | pos.parallax.phot                 |  Photometric parallaxes                                                        
 Q | pos.parallax.spect                |  Spectroscopic parallax                                                        
 Q | pos.parallax.trig                 |  Trigonometric parallax                                                        
-Q | pos.phaseAng                      |  Phase angle, e.g. elongation of earth from sun as seen from a third cel. object 
+Q | pos.phaseAng                      |  Phase angle, e.g. elongation of earth from sun as seen from a third celestial object 
 V | pos.pm                            |  Proper motion                                                                 
 Q | pos.posAng                        |  Position angle of a given vector                                              
 V | pos.precess                       |  Precession (in equatorial coordinates)                                        
@@ -497,7 +497,7 @@ P | stat.correlation                  |  Correlation between two parameters
 P | stat.covariance                   |  Covariance between two parameters                                             
 P | stat.error                        |  Statistical error                                                             
 P | stat.error.sys                    |  Systematic error                                                              
-Q | stat.filling                      |  Filling factor (volume, time, ..)                                              
+Q | stat.filling                      |  Filling factor (volume, time, ...)                                              
 Q | stat.fit                          |  Fit                                                                           
 P | stat.fit.chi2                     |  Chi2                                                                          
 P | stat.fit.dof                      |  Degrees of freedom                                                            
