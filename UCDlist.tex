@@ -10,7 +10,7 @@
 \usepackage{array}
 \usepackage{natbib} 
 \usepackage{enumitem} 
-\title{UCD1+ controlled vocabulary\\ \emph{Updated List of Terms}}
+\title{UCD1+ controlled vocabulary - \emph{Updated List of Terms}}
 
 % having descriptions in a narrow column is painful -- the following
 % is an attempt to define a suitable column style ("D"escription)
@@ -55,6 +55,7 @@
 \author{S\'ebastien Derri\`ere}
 \author{Fran\c cois Ochsenbein}
 \author{St\'ephane Erard}
+\author{Markus Demleitner}
 
 \editor[mailto:baptiste.cecconi@obspm.fr]{Baptiste Cecconi, Mireille Louys}
 
@@ -117,15 +118,13 @@ For typographic reasons some long UCD atoms are printed on two
 lines in the following table.  In these cases, \texttt{some.long...
 ...ucd.x} is to be read as \texttt{some.long.ucd.x}.
 
-\newpage
-
 %\begin{table}[h!]
 %\begin{tabular}{c|l|p{0.5\textwidth}}
 \footnotesize\begin{longtable}[h!]{c|D{0.23\textwidth}|D{0.67\textwidth}}
 \sptablerule
 \multicolumn{2}{l|}{\textbf{UCD word}}&\textbf{Description}\\
 \sptablerule
-% GENERATED: python3 convert_ucd_list_to_tex.py ucd-list-1_4.txt
+% GENERATED: python3 convert_ucd_list_to_tex.py ucd-list.txt
 Q & \ucd arith \enducd& Arithmetic quantities\\
 S & \ucd arith.diff \enducd& Difference between two quantities described by the same UCD\\
 P & \ucd arith.factor \enducd& Numerical factor\\
@@ -176,7 +175,7 @@ S & \ucd em.line.Hgamma \enducd& H-gamma line\\
 S & \ucd em.line.Hdelta \enducd& H-delta line\\
 S & \ucd em.line.Brgamma \enducd& Bracket gamma line\\
 S & \ucd em.line.OIII \enducd& [OIII] line whose rest wl is 500.7 nm\\
-S & \ucd em.line.CO \enducd& CO radio line,  e.g 12CO(1-0) at 115GHz\\
+S & \ucd em.line.CO \enducd& CO radio line, e.g., 12CO(1-0) at 115GHz\\
 S & \ucd em.mm \enducd& Millimetric/submillimetric part of the spectrum\\
 S & \ucd em.mm.30-50GHz \enducd& Millimetric between 30 and 50 GHz\\
 S & \ucd em.mm.50-100GHz \enducd& Millimetric between 50 and 100 GHz\\
@@ -400,8 +399,8 @@ Q & \ucd phys.electron.degen \enducd& Electron degeneracy parameter\\
 Q & \ucd phys.emissMeasure \enducd& Emission measure\\
 Q & \ucd phys.emissivity \enducd& Emissivity\\
 Q & \ucd phys.energy \enducd& Energy\\
-Q & \ucd phys.energy.Gibbs \enducd& Gibbs (free) energy or free enthalpy   [ G=H –TS ]\\
-Q & \ucd phys.energy.Helmholtz \enducd& Helmholtz free energy [ A=U–TS ]\\
+Q & \ucd phys.energy.Gibbs \enducd& Gibbs (free) energy or free enthalpy   [ G=H-TS ]\\
+Q & \ucd phys.energy.Helmholtz \enducd& Helmholtz free energy [ A=U-TS ]\\
 Q & \ucd phys.energy.density \enducd& Energy density\\
 Q & \ucd phys.enthalpy \enducd& Enthalpy  [ H=U+pv ]\\
 Q & \ucd phys.entropy \enducd& Entropy\\
@@ -478,7 +477,7 @@ Q & \ucd phys.veloc.orbital \enducd& Orbital velocity\\
 Q & \ucd phys.veloc.pulsat \enducd& Pulsational velocity\\
 Q & \ucd phys.veloc.rotat \enducd& Rotational velocity\\
 Q & \ucd phys.veloc.transverse \enducd& Transverse / tangential velocity\\
-S & \ucd phys.virial \enducd& Related to virial quantities (mass, radius, ..)\\
+S & \ucd phys.virial \enducd& Related to virial quantities (mass, radius, ...)\\
 Q & \ucd phys.volume \enducd& Volume (in cubic units)\\
 Q & \ucd pos \enducd& Position and coordinates\\
 Q & \ucd pos.angDistance \enducd& Angular distance, elongation\\
@@ -545,7 +544,7 @@ Q & \ucd pos.parallax.dyn \enducd& Dynamical parallax\\
 Q & \ucd pos.parallax.phot \enducd& Photometric parallaxes\\
 Q & \ucd pos.parallax.spect \enducd& Spectroscopic parallax\\
 Q & \ucd pos.parallax.trig \enducd& Trigonometric parallax\\
-Q & \ucd pos.phaseAng \enducd& Phase angle, e.g. elongation of earth from sun as seen from a third cel. object\\
+Q & \ucd pos.phaseAng \enducd& Phase angle, e.g. elongation of earth from sun as seen from a third celestial object\\
 V & \ucd pos.pm \enducd& Proper motion\\
 Q & \ucd pos.posAng \enducd& Position angle of a given vector\\
 V & \ucd pos.precess \enducd& Precession (in equatorial coordinates)\\
@@ -625,7 +624,7 @@ P & \ucd stat.correlation \enducd& Correlation between two parameters\\
 P & \ucd stat.covariance \enducd& Covariance between two parameters\\
 P & \ucd stat.error \enducd& Statistical error\\
 P & \ucd stat.error.sys \enducd& Systematic error\\
-Q & \ucd stat.filling \enducd& Filling factor (volume, time, ..)\\
+Q & \ucd stat.filling \enducd& Filling factor (volume, time, ...)\\
 Q & \ucd stat.fit \enducd& Fit\\
 P & \ucd stat.fit.chi2 \enducd& Chi2\\
 P & \ucd stat.fit.dof \enducd& Degrees of freedom\\
@@ -830,31 +829,31 @@ RFM\footnote{\url{https://wiki.ivoa.net/twiki/bin/view/IVOA/UCDList_1-3_RFM}} pr
 %\subsubsection*{Deletion}
 %\subsubsection*{Ammendment}
 \subsubsection*{Additions}
-\footnotesize\begin{longtable}[h!]{c|p{39.5ex}|D{0.45\textwidth}}
+\footnotesize\begin{longtable}[h!]{c|D{0.23\textwidth}|D{0.67\textwidth}}
 \sptablerule
-Q & {\tt phys.electCharge} & Electric charge\\
-Q & {\tt phys.current} & Electric current\\
-Q & {\tt phys.current.density} & Electric current density\\
-Q & {\tt pos.incidenceAng} & Incidence angle of optical ray on an interface\\
-Q & {\tt pos.emergenceAng} & Emergence angle of optical ray on an interface\\
-Q & {\tt pos.azimuth} & azimuthal angle in a generic reference plane\\
-Q & {\tt phys.reflectance} & Radiance factor (received radiance divided by input radiance)\\
-Q & {\tt phys.reflectance.bidirectional} & Bidirectional reflectance\\
-Q & {\tt phys.reflectance.bidirectional.df} & Bidirectional reflectance distribution function\\
-Q & {\tt phys.reflectance.factor} & Reflectance normalized per direction cosine of incidence angle\\
-S & {\tt pos.cylindrical} & Related to cylindrical coordinates\\
-Q & {\tt pos.cylindrical.r} & Radial distance from z-axis (cylindrical coordinates)\\
-Q & {\tt pos.cylindrical.azi} & Azimuthal angle around z-axis (cylindrical coordinates)\\
-Q & {\tt pos.cylindrical.z} & Height or altitude from reference plane (cylindrical coordinates)\\
-S & {\tt pos.spherical} & Related to spherical coordinates\\
-Q & {\tt pos.spherical.r} & Radial distance or radius (spherical coordinates)\\
-Q & {\tt pos.spherical.colat} & Polar or Colatitude angle (spherical coordinates)\\
-Q & {\tt pos.spherical.azi} & Azimuthal angle (spherical coordinates)\\
-Q & {\tt pos.resolution} & Spatial linear resolution (not angular)\\
-S & {\tt pos.bodycentric} & Body-centric related coordinate\\
-S & {\tt pos.bodygraphic} & Body-graphic related coordinate\\
-Q & {\tt meta.checksum} & Numerical signature of digital data\\
-Q & {\tt phys.polarization.coherency} & Matrix of the correlation between components of an electromagnetic wave\\
+Q & \ucd phys.electCharge \enducd& Electric charge\\
+Q & \ucd phys.current \enducd& Electric current\\
+Q & \ucd phys.current.density \enducd& Electric current density\\
+Q & \ucd pos.incidenceAng \enducd& Incidence angle of optical ray on an interface\\
+Q & \ucd pos.emergenceAng \enducd& Emergence angle of optical ray on an interface\\
+Q & \ucd pos.azimuth \enducd& azimuthal angle in a generic reference plane\\
+Q & \ucd phys.reflectance \enducd& Radiance factor (received radiance divided by input radiance)\\
+Q & \ucd phys.reflectance.bidirectional \enducd& Bidirectional reflectance\\
+Q & \ucd phys.reflectance.bidirectional.df \enducd& Bidirectional reflectance distribution function\\
+Q & \ucd phys.reflectance.factor \enducd& Reflectance normalized per direction cosine of incidence angle\\
+S & \ucd pos.cylindrical \enducd& Related to cylindrical coordinates\\
+Q & \ucd pos.cylindrical.r \enducd& Radial distance from z-axis (cylindrical coordinates)\\
+Q & \ucd pos.cylindrical.azi \enducd& Azimuthal angle around z-axis (cylindrical coordinates)\\
+Q & \ucd pos.cylindrical.z \enducd& Height or altitude from reference plane (cylindrical coordinates)\\
+S & \ucd pos.spherical \enducd& Related to spherical coordinates\\
+Q & \ucd pos.spherical.r \enducd& Radial distance or radius (spherical coordinates)\\
+Q & \ucd pos.spherical.colat \enducd& Polar or Colatitude angle (spherical coordinates)\\
+Q & \ucd pos.spherical.azi \enducd& Azimuthal angle (spherical coordinates)\\
+Q & \ucd pos.resolution \enducd& Spatial linear resolution (not angular)\\
+S & \ucd pos.bodycentric \enducd& Body-centric related coordinate\\
+S & \ucd pos.bodygraphic \enducd& Body-graphic related coordinate\\
+Q & \ucd meta.checksum \enducd& Numerical signature of digital data\\
+Q & \ucd phys.polarization.coherency \enducd& Matrix of the correlation between components of an electromagnetic wave\\
 \sptablerule
 \end{longtable}
 \subsubsection*{Clarification}
@@ -863,25 +862,25 @@ Clarified position rules for syntax code E, C, V in Section \ref{sec:list}.
 
 \subsection{Changes from PR v1.3-2018 following TCG comments}
 \subsubsection*{Update of definitions} 
-\footnotesize\begin{longtable}[h!]{c|p{39.5ex}|D{0.45\textwidth}}
+\footnotesize\begin{longtable}[h!]{c|D{0.23\textwidth}|D{0.67\textwidth}}
 \sptablerule
-Q & {\tt meta.query} &  A query posed to an information system or database or a property of it\\
+Q & \ucd meta.query \enducd&  A query posed to an information system or database or a property of it\\
 \sptablerule
 \end{longtable}
 
 \subsubsection*{Changes of position indicator} 
 Was
-\footnotesize\begin{longtable}[h!]{c|p{39.5ex}|D{0.45\textwidth}}
+\footnotesize\begin{longtable}[h!]{c|D{0.23\textwidth}|D{0.67\textwidth}}
 \sptablerule
-Q & {\tt phys.atmol.collisional} & Related to collisions\\
-Q & {\tt phys.virial}            & Related to virial quantities (mass, radius,..)\\
+Q & \ucd phys.atmol.collisional \enducd& Related to collisions\\
+Q & \ucd phys.virial \enducd& Related to virial quantities (mass, radius,..)\\
 \sptablerule
 \end{longtable}
-Changed to S to conform to the “Related to” definition and the usage of this UCD, mostly appearing as suffix.  
-\footnotesize\begin{longtable}[h!]{c|p{39.5ex}|D{0.45\textwidth}}
+Changed to S to conform to the ``Related to'' definition and the usage of this UCD, mostly appearing as suffix.  
+\footnotesize\begin{longtable}[h!]{c|D{0.23\textwidth}|D{0.67\textwidth}}
 \sptablerule
-S & {\tt phys.atmol.collisional} & Related to collisions\\
-S & {\tt phys.virial}            & Related to virial quantities (mass, radius,..)\\
+S & \ucd phys.atmol.collisional \enducd& Related to collisions\\
+S & \ucd phys.virial \enducd& Related to virial quantities (mass, radius,..)\\
 \sptablerule
 \end{longtable}
 
@@ -889,31 +888,31 @@ S & {\tt phys.virial}            & Related to virial quantities (mass
 Added section 3 Remarks on combination rules for UCD words.
 
 \subsubsection*{New terms}
-\footnotesize\begin{longtable}[h!]{c|p{39.5ex}|D{0.45\textwidth}}
+\footnotesize\begin{longtable}[h!]{c|D{0.23\textwidth}|D{0.67\textwidth}}
 \sptablerule
-P & {\tt meta.ref.doi} & DOI identifier (dereferenceable)\\
+P & \ucd meta.ref.doi \enducd& DOI identifier (dereferenceable)\\
 \sptablerule
 \end{longtable}
 
 \subsection{Changes from WD v1.23-20160719}
 \subsubsection*{Additions}
-\footnotesize\begin{longtable}[h!]{c|p{39.5ex}|D{0.45\textwidth}}
+\footnotesize\begin{longtable}[h!]{c|D{0.23\textwidth}|D{0.67\textwidth}}
 \sptablerule
-S & {\tt arith.squared} & Squared quantity\\
-S & {\tt arith.sum} & Summed or integrated quantity\\
-S & {\tt arith.variation} & Generic variation of a quantity\\
-S & {\tt instr.voxel} & Related to a voxel ( n-D volume element with n>2)\\
-Q & {\tt pos.outline} & Set of points outlining a region (contour)\\
-Q & {\tt stat.asymmetry} & Measure of asymmetry\\
-Q & {\tt phys.polarization.stokes.I} & Stokes polarization coefficient I\\
-Q & {\tt phys.polarization.stokes.Q} & Stokes polarization coefficient Q\\
-Q & {\tt phys.polarization.stokes.U} & Stokes polarization coefficient U\\
-Q & {\tt phys.polarization.stokes.V} & Stokes polarization coefficient V\\
-Q & {\tt stat.asymmetry} & Measure of asymmetry\\
-S & {\tt stat.fwhm} & Full width at half maximum\\
-S & {\tt stat.interval} & Generic interval between two limits (defined as a pair of values)\\
-P & {\tt stat.rank} & Rank or order in list of sorted value\\
-P & {\tt stat.rms} & Root mean square  Square root of sum of squared values or quadratic mean\\
+S & \ucd arith.squared \enducd& Squared quantity\\
+S & \ucd arith.sum \enducd& Summed or integrated quantity\\
+S & \ucd arith.variation \enducd& Generic variation of a quantity\\
+S & \ucd instr.voxel \enducd& Related to a voxel ( n-D volume element with n>2)\\
+Q & \ucd pos.outline \enducd& Set of points outlining a region (contour)\\
+Q & \ucd stat.asymmetry \enducd& Measure of asymmetry\\
+Q & \ucd phys.polarization.stokes.I \enducd& Stokes polarization coefficient I\\
+Q & \ucd phys.polarization.stokes.Q \enducd& Stokes polarization coefficient Q\\
+Q & \ucd phys.polarization.stokes.U \enducd& Stokes polarization coefficient U\\
+Q & \ucd phys.polarization.stokes.V \enducd& Stokes polarization coefficient V\\
+Q & \ucd stat.asymmetry \enducd& Measure of asymmetry\\
+S & \ucd stat.fwhm \enducd& Full width at half maximum\\
+S & \ucd stat.interval \enducd& Generic interval between two limits (defined as a pair of values)\\
+P & \ucd stat.rank \enducd& Rank or order in list of sorted value\\
+P & \ucd stat.rms \enducd& Root mean square  Square root of sum of squared values or quadratic mean\\
 \sptablerule
 \end{longtable}
 
@@ -937,41 +936,41 @@ Description changed in words:
 \end{flushleft}
 
 \subsubsection*{Additions}
-\footnotesize\begin{longtable}[h!]{c|p{39.5ex}|D{0.45\textwidth}}
+\footnotesize\begin{longtable}[h!]{c|D{0.23\textwidth}|D{0.67\textwidth}}
 \sptablerule
-Q & {\tt em.freq.cutoff} & Cutoff frequency\\
-Q & {\tt em.freq.resonance} & Resonance frequency\\
-S & {\tt em.pw} & Plasma waves (trapped in local medium)\\
-S & {\tt em.radio.20MHz} & Radio below 20 MHz\\
-Q & {\tt instr.experiment} & Experiment or group of instruments\\
-Q & {\tt meta.calibLevel} & Processing/calibration level\\
-S & {\tt meta.preview} & Related to a preview operation (for a dataset)\\
-Q & {\tt meta.query} & Related to query posed to an information system or database\\
-Q & {\tt meta.ref.ivoid} & An identifier following the IVOA Identifiers recommendation\\
-S & {\tt obs.calib.dark} & Related to dark current calibration\\
-S & {\tt obs.occult} & Observation of occultation phenomenon by solar system objects\\
-S & {\tt obs.transit} & Observation of transit phenomenon: exo-planets\\
-E & {\tt phot.radiance} & Radiance as energy flux per solid angle\\
-S & {\tt phys.aerosol} & Relative to aerosol\\
-Q & {\tt phys.density.phaseSpace} & Density in the phase space\\
-S & {\tt phys.dust} & Relative to dust\\
-E & {\tt phys.fluence} & Radiant photon energy received by a surface per unit area, or irradiance of a surface integrated over time of irradiation\\
-Q & {\tt phys.flux} & Flux or flow of particle, energy, etc.\\
-Q & {\tt phys.flux.energy} & Energy flux, heat flux\\
-Q & {\tt phys.mass.inertiaMomentum} & Momentum of inertia or rotational inertia\\
-S & {\tt phys.particle} & Related to physical particles\\
-S & {\tt phys.particle.neutron} & Related to neutron\\
-S & {\tt phys.particle.proton} & Related to proton\\
-S & {\tt phys.particle.alpha} & Related to alpha particle\\
-S & {\tt phys.phaseSpace} & Related to phase space\\
-Q & {\tt phys.potential} & Potential (electric, gravitational, etc.)\\
-Q & {\tt phys.size.smedAxis} & Linear semi median axis for 3D ellipsoids\\
-Q & {\tt phys.volume} & Volume (in cubic units)\\
-Q & {\tt pos.outline} & Set of points outlining a region (contour)\\
-Q & {\tt src.orbital.Tisserand} & Tisserand parameter (generic)\\
-Q & {\tt src.orbital.TissJ} & Tisserand parameter with respect to Jupiter\\
-Q & {\tt time.period.revolution} & Period of revolution of a body around a primary one (similar to year)\\
-Q & {\tt time.period.rotation} & Period of rotation of a body around its axis (similar to day)\\
+Q & \ucd em.freq.cutoff \enducd& Cutoff frequency\\
+Q & \ucd em.freq.resonance \enducd& Resonance frequency\\
+S & \ucd em.pw \enducd& Plasma waves (trapped in local medium)\\
+S & \ucd em.radio.20MHz \enducd& Radio below 20 MHz\\
+Q & \ucd instr.experiment \enducd& Experiment or group of instruments\\
+Q & \ucd meta.calibLevel \enducd& Processing/calibration level\\
+S & \ucd meta.preview \enducd& Related to a preview operation (for a dataset)\\
+Q & \ucd meta.query \enducd& Related to query posed to an information system or database\\
+Q & \ucd meta.ref.ivoid \enducd& An identifier following the IVOA Identifiers recommendation\\
+S & \ucd obs.calib.dark \enducd& Related to dark current calibration\\
+S & \ucd obs.occult \enducd& Observation of occultation phenomenon by solar system objects\\
+S & \ucd obs.transit \enducd& Observation of transit phenomenon: exo-planets\\
+E & \ucd phot.radiance \enducd& Radiance as energy flux per solid angle\\
+S & \ucd phys.aerosol \enducd& Relative to aerosol\\
+Q & \ucd phys.density.phaseSpace \enducd& Density in the phase space\\
+S & \ucd phys.dust \enducd& Relative to dust\\
+E & \ucd phys.fluence \enducd& Radiant photon energy received by a surface per unit area, or irradiance of a surface integrated over time of irradiation\\
+Q & \ucd phys.flux \enducd& Flux or flow of particle, energy, etc.\\
+Q & \ucd phys.flux.energy \enducd& Energy flux, heat flux\\
+Q & \ucd phys.mass.inertiaMomentum \enducd& Momentum of inertia or rotational inertia\\
+S & \ucd phys.particle \enducd& Related to physical particles\\
+S & \ucd phys.particle.neutron \enducd& Related to neutron\\
+S & \ucd phys.particle.proton \enducd& Related to proton\\
+S & \ucd phys.particle.alpha \enducd& Related to alpha particle\\
+S & \ucd phys.phaseSpace \enducd& Related to phase space\\
+Q & \ucd phys.potential \enducd& Potential (electric, gravitational, etc.)\\
+Q & \ucd phys.size.smedAxis \enducd& Linear semi median axis for 3D ellipsoids\\
+Q & \ucd phys.volume \enducd& Volume (in cubic units)\\
+Q & \ucd pos.outline \enducd& Set of points outlining a region (contour)\\
+Q & \ucd src.orbital.Tisserand \enducd& Tisserand parameter (generic)\\
+Q & \ucd src.orbital.TissJ \enducd& Tisserand parameter with respect to Jupiter\\
+Q & \ucd time.period.revolution \enducd& Period of revolution of a body around a primary one (similar to year)\\
+Q & \ucd time.period.rotation \enducd& Period of rotation of a body around its axis (similar to day)\\
 \sptablerule
 \end{longtable}
 
