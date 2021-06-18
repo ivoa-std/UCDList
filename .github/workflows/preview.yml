@@ -43,8 +43,8 @@ jobs:
     - name: Move the auto-pdf-preview tag
       uses: weareyipyip/walking-tag-action@v1
       with:
-        tag_name: auto-pdf-preview
-        tag_message: |
+        tag-name: auto-pdf-preview
+        tag-message: |
           Last commit taken into account for the automatically updated PDF preview of this IVOA document.
       env:
         github_token: ${{ secrets.GITHUB_TOKEN }}
