@@ -41,7 +41,7 @@ jobs:
         test -f ${{ env.doc_name }}.bbl
     
     - name: Move the auto-pdf-preview tag
-      uses: weareyipyip/walking-tag-action@v1
+      uses: weareyipyip/walking-tag-action@v2
       with:
         tag-name: auto-pdf-preview
         tag-message: |
