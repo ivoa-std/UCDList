@@ -47,7 +47,7 @@ jobs:
         tag-message: |
           Last commit taken into account for the automatically updated PDF preview of this IVOA document.
       env:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     
     - name: Update the PDF preview
       uses: Xotl/cool-github-releases@v1
@@ -63,4 +63,4 @@ jobs:
           _Corresponding commit: ${{ github.sha }}_
         assets: ${{ env.doc_name }}-draft.pdf;ucd-list.txt;ucd-list-deprecated.txt
         replace_assets: true
-        github_token: ${{ secrets.GITHUB_TOKEN }}
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
