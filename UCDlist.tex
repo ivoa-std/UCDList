@@ -9,7 +9,7 @@
 \usepackage{longtable}
 \usepackage{array}
 \usepackage{natbib} 
-\usepackage{enumitem} 
+% \usepackage{enumitem} 
 \title{UCD1+ controlled vocabulary - \emph{Updated List of Terms}}
 
 % having descriptions in a narrow column is painful -- the following
@@ -66,30 +66,32 @@ controlled vocabulary 1.3}
 
 \begin{document}
 \begin{abstract}
-This document describes the \emph{list of controlled terms}  building up the corpus of the Unified Content Descriptors, Version 1+ (UCD1+). 
-
-The document describing the UCD1+ principles can be found at the URL: \url{https://ivoa.net/documents/UCD1+/20180527/index.html}. 
-It is an IVOA Recommendation. 
-The process to maintain and enrich the UCD list of terms is standardized in  \url{https://ivoa.net/documents/UCDlistMaintenance/}.
-It states that successive versions of the UCD1+ vocabulary are distributed in Endorsed Notes within the IVOA.
-This version is the first Endorsed Note for UCD list, currently proposed. 
-It contains new UCD words discussed and accepted by the Semantics Working Group during the UCD list v1.3 RFM (request for modification) available at \url{https://wiki.ivoa.net/twiki/bin/view/IVOA/UCDList_1-3_RFM}.
+This document describes the \emph{list of controlled terms}  building up the corpus of the Unified 
+Content Descriptors, Version 1+ (UCD1+).  The document describing the UCD1+ principles can be found at 
+the URL: \url{https://ivoa.net/documents/UCD1+/20180527/index.html}.  It is an IVOA Recommendation. 
+The process to maintain and enrich the UCD list of terms is standardized in 
+\url{https://ivoa.net/documents/UCDlistMaintenance/}.  It states that successive versions of the UCD1+ 
+vocabulary are distributed in Endorsed Notes within the IVOA.  This version is the first Endorsed Note 
+for UCD list, currently proposed.  It contains new UCD words discussed and accepted by the Semantics 
+Working Group during the UCD list v1.3 RFM (request for modification) available at 
+\url{https://wiki.ivoa.net/twiki/bin/view/IVOA/UCDList_1-3_RFM}.
 
 \end{abstract} 
 
 \section{Introduction}
 
-A UCD is a string which contains textual tokens called `words', separated by semicolons(;). A word is composed of 
-`atoms', separated by periods(.). The hierarchy is as follows: 
+A UCD is a string which contains textual tokens called `words', separated by semicolons(;). A word is 
+composed of `atoms', separated by periods(.). The hierarchy is as follows: 
 $$
 \textrm{atoms} \rightarrow \textrm{words} \rightarrow \textrm{composed words}
 $$
 UCD1+ are either single words, or a composition of several words.
 
-UCDs are ``controlled'' through a process defined in the IVOA. See \citet{2005ivoa.spec.0819D} and section \ref{sec:words} below. 
-Control is exercised at the level of words (UCD1+) and at the level of the vocabulary (atoms) used to form words. A 
-consistent list of atoms will be maintained, making sure that the same atom always means the same thing, even if used 
-in combination with different other atoms. 
+UCDs are ``controlled'' through a process defined in the IVOA. See \citet{2005ivoa.spec.0819D} and 
+section \ref{sec:words} below. Control is exercised at the level of words (UCD1+) and at the level 
+of the vocabulary (atoms) used to form words. A consistent list of atoms will be maintained, making 
+sure that the same atom always means the same thing, even if used in combination with different other 
+atoms. 
 
 
 \section{List of valid words}
@@ -104,7 +106,7 @@ single quantity;
 
 The following cases behave as Q prefix and can be combined  as primary or secondary.
 They specialize the combination rules:  
-	\begin{enumerate}[label*=\arabic*.]
+	\begin{enumerate}
 	\item ``E'' means a photometric quantity, and can be followed by a word describing a part of 
 	the electromagnetic spectrum;
 	\item ``C'' is a colour index, and can be followed by two successive word describing a part of 
