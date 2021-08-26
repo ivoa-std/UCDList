@@ -133,9 +133,9 @@ P | meta.code.multip                  |  Multiplicity or binarity flag
 P | meta.code.qual                    |  Quality, precision, reliability flag or code                                  
 P | meta.code.status                  |  Status code (e.g.: status of a proposal/observation)                           
 P | meta.cryptic                      |  Unknown or impossible to understand quantity                                  
-P | meta.curation                     |  Identity of man/organization responsible for the data                         
+S | meta.curation                     |  Related to curation of the data                          
 Q | meta.dataset                      |  Dataset                                                                       
-Q | meta.email                        |  Curation/contact e-mail                                                        
+Q | meta.email                        |  Contact e-mail                                                        
 S | meta.file                         |  File                                                                          
 S | meta.fits                         |  FITS standard                                                                 
 P | meta.id                           |  Identifier, name or designation                                               
