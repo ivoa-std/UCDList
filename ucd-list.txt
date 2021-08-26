@@ -329,7 +329,7 @@ Q | phys.reflectance.bidirectional    |  Bidirectional reflectance
 Q | phys.reflectance.bidirectional.df |  Bidirectional reflectance distribution function
 Q | phys.reflectance.factor           |  Reflectance normalized per direction cosine of incidence angle
 Q | phys.refractIndex                 |  Refraction index                                                              
-Q | phys.size                         |  Linear size, length (not angular)                                             
+Q | phys.size                         |  Linear size, length (not angular) in length units or bytes                                              
 Q | phys.size.axisRatio               |  Axis ratio (a/b) or (b/a)                                                     
 Q | phys.size.diameter                |  Diameter                                                                      
 Q | phys.size.radius                  |  Radius                                                                        
