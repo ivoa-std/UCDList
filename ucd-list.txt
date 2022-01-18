@@ -93,7 +93,7 @@ Q | instr.det.qe                      |  Quantum efficiency
 Q | instr.dispersion                  |  Dispersion of a spectrograph                                                  
 Q | instr.experiment                  |  Experiment or group of instruments                                            
 S | instr.filter                      |  Filter                                                                        
-S | instr.fov                         |  Field of view                                                                 
+S | instr.fov                         |  Related to the field of view                                                                 
 S | instr.obsty                       |  Observatory, satellite, mission                                               
 Q | instr.obsty.seeing                |  Seeing                                                                        
 Q | instr.offset                      |  Offset angle respect to main direction of observation                         

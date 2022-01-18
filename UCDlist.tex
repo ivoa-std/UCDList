@@ -220,7 +220,7 @@ Q & \ucd instr.det.qe \enducd& Quantum efficiency\\
 Q & \ucd instr.dispersion \enducd& Dispersion of a spectrograph\\
 Q & \ucd instr.experiment \enducd& Experiment or group of instruments\\
 S & \ucd instr.filter \enducd& Filter\\
-S & \ucd instr.fov \enducd& Field of view\\
+S & \ucd instr.fov \enducd& Related to the field of view\\
 S & \ucd instr.obsty \enducd& Observatory, satellite, mission\\
 Q & \ucd instr.obsty.seeing \enducd& Seeing\\
 Q & \ucd instr.offset \enducd& Offset angle respect to main direction of observation\\
@@ -260,9 +260,9 @@ P & \ucd meta.code.multip \enducd& Multiplicity or binarity flag\\
 P & \ucd meta.code.qual \enducd& Quality, precision, reliability flag or code\\
 P & \ucd meta.code.status \enducd& Status code (e.g.: status of a proposal/observation)\\
 P & \ucd meta.cryptic \enducd& Unknown or impossible to understand quantity\\
-P & \ucd meta.curation \enducd& Identity of man/organization responsible for the data\\
+S & \ucd meta.curation \enducd& Related to curation of the data\\
 Q & \ucd meta.dataset \enducd& Dataset\\
-Q & \ucd meta.email \enducd& Curation/contact e-mail\\
+Q & \ucd meta.email \enducd& Contact e-mail\\
 S & \ucd meta.file \enducd& File\\
 S & \ucd meta.fits \enducd& FITS standard\\
 P & \ucd meta.id \enducd& Identifier, name or designation\\
@@ -456,7 +456,7 @@ Q & \ucd phys.reflectance.bidirectional \enducd& Bidirectional reflectance\\
 Q & \ucd phys.reflectance.bidirectional.df \enducd& Bidirectional reflectance distribution function\\
 Q & \ucd phys.reflectance.factor \enducd& Reflectance normalized per direction cosine of incidence angle\\
 Q & \ucd phys.refractIndex \enducd& Refraction index\\
-Q & \ucd phys.size \enducd& Linear size, length (not angular)\\
+Q & \ucd phys.size \enducd& Linear size, length (not angular) in length units or bytes\\
 Q & \ucd phys.size.axisRatio \enducd& Axis ratio (a/b) or (b/a)\\
 Q & \ucd phys.size.diameter \enducd& Diameter\\
 Q & \ucd phys.size.radius \enducd& Radius\\
@@ -818,6 +818,14 @@ for other details.
 
 
 \section{Changes from previous versions}
+
+\subsection{Changes from v1.4}
+
+\begin{itemize}
+\item Amending \ucd{instr.fov} description with ``related to'' to make
+it work better as an S atom.
+\end{itemize}
+
 
 \subsection{Changes from REC v1.3 following RFM}
 The document title has been updated and the document sections have been reorganised to focus on 
