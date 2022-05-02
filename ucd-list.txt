@@ -159,6 +159,7 @@ Q | meta.ref.ivoid                    |  Identifier as recommended  in the IVOA 
 P | meta.ref.ivorn                    |  Identifier defined as IVORN, VO Resource Name (ivo://)  (deprecated)                                    
 P | meta.ref.orcid                    |  ORCID identifier for people working in research (dereferenceable)
 P | meta.ref.rorid                    |  ROR unique and persistent identifier for research organizations 
+P | meta.ref.pid                      |  Persistent Identifier (dereferenceable)
 P | meta.ref.uri                      |  URI, universal resource identifier                                             
 P | meta.ref.url                      |  URL, web address                                                              
 S | meta.software                     |  Software used in generating data                                              
@@ -520,6 +521,7 @@ S | stat.mean                         |  Mean, average value
 S | stat.median                       |  Median value                                                                  
 S | stat.min                          |  Minimum or lowest limit                                                       
 Q | stat.param                        |  Parameter                                                                     
+Q | stat.percentile                   |  Percentile of a statistical distribution 
 Q | stat.probability                  |  Probability                                                                   
 P | stat.rank                         |  Rank or order in list of sorted values  
 P | stat.rms                          |  Root mean square as square root of sum of squared values or quadratic mean 
