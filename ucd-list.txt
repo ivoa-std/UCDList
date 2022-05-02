@@ -154,8 +154,11 @@ Q | meta.query                        |  A query posed to an information system 
 P | meta.record                       |  Record number                                                                 
 P | meta.ref                          |  Reference or origin                                                          
 P | meta.ref.doi                      |  DOI identifier (dereferenceable)
+P | meta.ref.epic                     |  ePIC identifier (dereferenceable)
 Q | meta.ref.ivoid                    |  Identifier as recommended  in the IVOA  (dereferenceable)
 P | meta.ref.ivorn                    |  Identifier defined as IVORN, VO Resource Name (ivo://)  (deprecated)                                    
+P | meta.ref.orcid                    |  ORCID identifier for people working in research (dereferenceable)
+P | meta.ref.rorid                    |  ROR unique and persistent identifier for research organizations 
 P | meta.ref.uri                      |  URI, universal resource identifier                                             
 P | meta.ref.url                      |  URL, web address                                                              
 S | meta.software                     |  Software used in generating data                                              
@@ -509,7 +512,9 @@ Q | stat.Fourier                      |  Fourier coefficient
 Q | stat.Fourier.amplitude            |  Amplitude of Fourier coefficient 
 S | stat.fwhm                         |  Full width at half maximum                              
 S | stat.interval                     |  Generic interval between two limits (defined as a pair of values)                                                                                                                  
+P | stat.kurtosis                     |  Kurtosis of a probability distribution (Fourth moment)                                                                     
 P | stat.likelihood                   |  Likelihood                                                                    
+P | stat.mad                          |  Median absolute deviation from median value in a univariate data sample
 S | stat.max                          |  Maximum or upper limit                                                        
 S | stat.mean                         |  Mean, average value                                                           
 S | stat.median                       |  Median value                                                                  
@@ -518,6 +523,7 @@ Q | stat.param                        |  Parameter
 Q | stat.probability                  |  Probability                                                                   
 P | stat.rank                         |  Rank or order in list of sorted values  
 P | stat.rms                          |  Root mean square as square root of sum of squared values or quadratic mean 
+P | stat.skewness                     |  Skewness of a probability distribution (third moment)                                                       
 P | stat.snr                          |  Signal to noise ratio                                                         
 P | stat.stdev                        |  Standard deviation as the square root of the variance                                                           
 S | stat.uncalib                      |  Qualifier of a generic uncalibrated quantity                                   
