@@ -7,14 +7,14 @@ DOCNAME = UCDlist
 DOCVERSION = 1.5
 
 # Publication date, ISO format; update manually for "releases"
-DOCDATE = 2022-05-03
+DOCDATE = 2022-05-04
 
 # What is it you're writing: NOTE, WD, PR, REC, PEN, or EN
 DOCTYPE = PEN
 
 # An e-mail address of the person doing the submission to the document
 # repository (can be empty until a make upload is being made)
-AUTHOR_EMAIL=baptiste.cecconi@obspm.fr, mireille.louys@unistra.fr
+AUTHOR_EMAIL=mireille.louys@unistra.fr
 
 # Source files for the TeX document (but the main file must always
 # be called $(DOCNAME).tex
