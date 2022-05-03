@@ -26,6 +26,7 @@ jobs:
 
     - name: Build the document
       run: | 
+        make generate
         make
         make biblio
 
