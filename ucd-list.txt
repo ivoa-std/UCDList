@@ -359,10 +359,10 @@ Q | phys.volume                       |  Volume (in cubic units)
 Q | pos                               |  Position and coordinates                                                      
 Q | pos.angDistance                   |  Angular distance, elongation                                                  
 Q | pos.angResolution                 |  Angular resolution                                                            
-Q | pos.az                            |  Position in alt-azimutal frame                                                
-Q | pos.az.alt                        |  Alt-azimutal altitude                                                         
-Q | pos.az.azi                        |  Alt-azimutal azimut                                                           
-Q | pos.az.zd                         |  Alt-azimutal zenith distance                                                  
+Q | pos.az                            |  Position in alt-azimuthal frame                                                
+Q | pos.az.alt                        |  Alt-azimuthal altitude                                                         
+Q | pos.az.azi                        |  Alt-azimuthal azimuth                                                           
+Q | pos.az.zd                         |  Alt-azimuthal zenith distance                                                  
 Q | pos.azimuth                       |  Azimuthal angle in a generic reference plane
 S | pos.barycenter                    |  Barycenter                                                                    
 S | pos.bodycentric                   |  Body-centric related coordinate
