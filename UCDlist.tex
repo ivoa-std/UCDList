@@ -222,7 +222,7 @@ Q & \ucd instr.det.qe \enducd& Quantum efficiency\\
 Q & \ucd instr.dispersion \enducd& Dispersion of a spectrograph\\
 Q & \ucd instr.experiment \enducd& Experiment or group of instruments\\
 S & \ucd instr.filter \enducd& Filter\\
-S & \ucd instr.fov \enducd& Field of view\\
+S & \ucd instr.fov \enducd& Related to the field of view\\
 S & \ucd instr.obsty \enducd& Observatory, satellite, mission\\
 Q & \ucd instr.obsty.seeing \enducd& Seeing\\
 Q & \ucd instr.offset \enducd& Offset angle respect to main direction of observation\\
@@ -262,9 +262,9 @@ P & \ucd meta.code.multip \enducd& Multiplicity or binarity flag\\
 P & \ucd meta.code.qual \enducd& Quality, precision, reliability flag or code\\
 P & \ucd meta.code.status \enducd& Status code (e.g.: status of a proposal/observation)\\
 P & \ucd meta.cryptic \enducd& Unknown or impossible to understand quantity\\
-P & \ucd meta.curation \enducd& Identity of man/organization responsible for the data\\
+S & \ucd meta.curation \enducd& Related to curation of the data\\
 Q & \ucd meta.dataset \enducd& Dataset\\
-Q & \ucd meta.email \enducd& Curation/contact e-mail\\
+Q & \ucd meta.email \enducd& Contact e-mail\\
 S & \ucd meta.file \enducd& File\\
 S & \ucd meta.fits \enducd& FITS standard\\
 P & \ucd meta.id \enducd& Identifier, name or designation\\
@@ -458,7 +458,7 @@ Q & \ucd phys.reflectance.bidirectional \enducd& Bidirectional reflectance\\
 Q & \ucd phys.reflectance.bidirectional.df \enducd& Bidirectional reflectance distribution function\\
 Q & \ucd phys.reflectance.factor \enducd& Reflectance normalized per direction cosine of incidence angle\\
 Q & \ucd phys.refractIndex \enducd& Refraction index\\
-Q & \ucd phys.size \enducd& Linear size, length (not angular)\\
+Q & \ucd phys.size \enducd& Linear size, length (not angular) in length units or bytes\\
 Q & \ucd phys.size.axisRatio \enducd& Axis ratio (a/b) or (b/a)\\
 Q & \ucd phys.size.diameter \enducd& Diameter\\
 Q & \ucd phys.size.radius \enducd& Radius\\
@@ -818,8 +818,26 @@ value is error, qualified by {\tt phot.mag}, itself qualified by {\tt em.opt.B}.
 Concatenation can apply more than one time, depending on ordering rules. See \citet{2005ivoa.spec.0819D}, section 3.3, 
 for other details.
 
-
 \section{Changes from previous versions}
+\subsection{Changes from UCDList EN v1.4 following RFM}
+\subsubsection*{Additions}
+\emph{stat.skewness}, \emph{stat.kurtosis},\emph{stat.mad} \\
+\emph{stat.percentile} \\
+\emph{meta.ref.pid}, \emph{meta.ref.epic}, \emph{meta.ref.rorid}, \emph{meta.ref.orcid} \\
+
+\subsubsection*{Ammendment}
+\emph{meta.curation} changed to Q to allow combination as secondary term. The former usage \emph{meta.curation} for the id or name of a curator is discouraged. \emph{meta.id;meta.curation} is recommended instead.
+
+\subsubsection*{Deprecation}
+None
+
+\subsection{Changes from v1.4}
+
+\begin{itemize}
+\item Amending \emph{instr.fov} description with ``related to'' to make
+it work better as an S atom.
+\end{itemize}
+
 
 \subsection{Changes from REC v1.3 following RFM}
 The document title has been updated and the document sections have been reorganised to focus on 
@@ -1038,11 +1056,11 @@ Description changed in words:
 
 \subsubsection*{Additions}
 \begin{flushleft}
-{\tt em.bin}, {\tt em.binSize}, {\tt em.IR.FIR}, {\tt em.IR.MIR}, {\tt em.IR.NIR}, {\tt em.UV.FUV}, 
+{\tt em.bin}, {\tt em.IR.FIR}, {\tt em.IR.MIR}, {\tt em.IR.NIR}, {\tt em.UV.FUV}, 
 {\tt meta.abstract}, {\tt meta.code.status}, {\tt meta.email}, {\tt meta.id.PI}, {\tt meta.id.CoI}, 
 {\tt meta.ref.ivorn}, {\tt meta.ref.uri}, {\tt obs.calib.flat}, {\tt obs.exposure}, {\tt obs.proposal}, 
 {\tt obs.proposal.cycle}, {\tt obs.sequence}, {\tt phys.atmol.symmetry}, {\tt phys.atmol.sWeight.nuclear}, 
-{\tt phys.cosmology}, {\tt phys.damping}, {\tt phys.entropy}, {\tt phys.particle.neutrino}, {\tt phys.virial}, 
+{\tt phys.cosmology}, {\tt phys.damping}, {\tt phys.entropy}, {\tt phys.particle.neutrino}, {\tt phys.virial}, {\tt spect.binSize},
 {\tt spect.line.strength}, {\tt src.calib}, {\tt src.calib.guideStar}, {\tt src.net}, {\tt stat.filling}, 
 {\tt stat.probability}, {\tt stat.uncalib}, {\tt time.creation}, {\tt time.duration}, {\tt time.end}, 
 {\tt time.processing}, {\tt time.publiYear}, {\tt time.release}, {\tt time.star}
