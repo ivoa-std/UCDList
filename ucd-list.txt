@@ -156,7 +156,6 @@ P | meta.ref                          |  Reference or origin
 P | meta.ref.doi                      |  DOI identifier (dereferenceable)
 P | meta.ref.epic                     |  ePIC identifier (dereferenceable)
 Q | meta.ref.ivoid                    |  Identifier as recommended  in the IVOA  (dereferenceable)
-P | meta.ref.ivorn                    |  Identifier defined as IVORN, VO Resource Name (ivo://)  (deprecated)                                    
 P | meta.ref.orcid                    |  ORCID identifier for people working in research (dereferenceable)
 P | meta.ref.rorid                    |  ROR unique and persistent identifier for research organizations 
 P | meta.ref.pid                      |  Persistent Identifier (dereferenceable)
