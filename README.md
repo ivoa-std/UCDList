@@ -1,4 +1,4 @@
-![UCDList version](https://img.shields.io/badge/UCDList-EN--1.4-yellow.svg)
+![UCDList version](https://img.shields.io/badge/UCDList-PEN--1.5-yellow.svg)
 [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)](http://creativecommons.org/licenses/by/4.0/)
 
 # UCDList
@@ -14,7 +14,8 @@ table columns distributed in the astronomical community.
 
 This version contains new UCD words discussed and accepted by the Semantics 
 Working Group during the [UCD list v1.3 RFM](https://wiki.ivoa.net/twiki/bin/view/IVOA/UCDList_1-3_RFM) 
-(Request For Modifications) and [v1.4 RFM](https://wiki.ivoa.net/twiki/bin/view/IVOA/UCDList_1-4_RFM).
+(Request For Modifications), [v1.4 RFM](https://wiki.ivoa.net/twiki/bin/view/IVOA/UCDList_1-4_RFM) 
+and [v1.5 RFM](https://wiki.ivoa.net/twiki/bin/view/IVOA/UCDList_1-5_RFM).
 
 The list of UCD1+ words is maintained by the UCD Scientific Board, following the 
 procedure defined in the [UCDList 
