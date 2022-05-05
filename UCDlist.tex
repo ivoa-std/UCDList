@@ -262,7 +262,7 @@ P & \ucd meta.code.multip \enducd& Multiplicity or binarity flag\\
 P & \ucd meta.code.qual \enducd& Quality, precision, reliability flag or code\\
 P & \ucd meta.code.status \enducd& Status code (e.g.: status of a proposal/observation)\\
 P & \ucd meta.cryptic \enducd& Unknown or impossible to understand quantity\\
-S & \ucd meta.curation \enducd& Related to curation of the data\\
+Q & \ucd meta.curation \enducd& Parameter informing about the curation of the data\\
 Q & \ucd meta.dataset \enducd& Dataset\\
 Q & \ucd meta.email \enducd& Contact e-mail\\
 S & \ucd meta.file \enducd& File\\
@@ -283,8 +283,11 @@ Q & \ucd meta.query \enducd& A query posed to an information system or database 
 P & \ucd meta.record \enducd& Record number\\
 P & \ucd meta.ref \enducd& Reference or origin\\
 P & \ucd meta.ref.doi \enducd& DOI identifier (dereferenceable)\\
+P & \ucd meta.ref.epic \enducd& ePIC identifier (dereferenceable)\\
 Q & \ucd meta.ref.ivoid \enducd& Identifier as recommended  in the IVOA  (dereferenceable)\\
-P & \ucd meta.ref.ivorn \enducd& Identifier defined as IVORN, VO Resource Name (ivo://)  (deprecated)\\
+P & \ucd meta.ref.orcid \enducd& ORCID identifier for people working in research (dereferenceable)\\
+P & \ucd meta.ref.rorid \enducd& ROR unique and persistent identifier for research organizations\\
+P & \ucd meta.ref.pid \enducd& Persistent Identifier (dereferenceable)\\
 P & \ucd meta.ref.uri \enducd& URI, universal resource identifier\\
 P & \ucd meta.ref.url \enducd& URL, web address\\
 S & \ucd meta.software \enducd& Software used in generating data\\
@@ -484,10 +487,10 @@ Q & \ucd phys.volume \enducd& Volume (in cubic units)\\
 Q & \ucd pos \enducd& Position and coordinates\\
 Q & \ucd pos.angDistance \enducd& Angular distance, elongation\\
 Q & \ucd pos.angResolution \enducd& Angular resolution\\
-Q & \ucd pos.az \enducd& Position in alt-azimutal frame\\
-Q & \ucd pos.az.alt \enducd& Alt-azimutal altitude\\
-Q & \ucd pos.az.azi \enducd& Alt-azimutal azimut\\
-Q & \ucd pos.az.zd \enducd& Alt-azimutal zenith distance\\
+Q & \ucd pos.az \enducd& Position in alt-azimuthal frame\\
+Q & \ucd pos.az.alt \enducd& Alt-azimuthal altitude\\
+Q & \ucd pos.az.azi \enducd& Alt-azimuthal azimuth\\
+Q & \ucd pos.az.zd \enducd& Alt-azimuthal zenith distance\\
 Q & \ucd pos.azimuth \enducd& Azimuthal angle in a generic reference plane\\
 S & \ucd pos.barycenter \enducd& Barycenter\\
 S & \ucd pos.bodycentric \enducd& Body-centric related coordinate\\
@@ -638,15 +641,19 @@ Q & \ucd stat.Fourier \enducd& Fourier coefficient\\
 Q & \ucd stat.Fourier.amplitude \enducd& Amplitude of Fourier coefficient\\
 S & \ucd stat.fwhm \enducd& Full width at half maximum\\
 S & \ucd stat.interval \enducd& Generic interval between two limits (defined as a pair of values)\\
+P & \ucd stat.kurtosis \enducd& Kurtosis of a probability distribution (Fourth moment)\\
 P & \ucd stat.likelihood \enducd& Likelihood\\
+P & \ucd stat.mad \enducd& Median absolute deviation from median value in a univariate data sample\\
 S & \ucd stat.max \enducd& Maximum or upper limit\\
 S & \ucd stat.mean \enducd& Mean, average value\\
 S & \ucd stat.median \enducd& Median value\\
 S & \ucd stat.min \enducd& Minimum or lowest limit\\
 Q & \ucd stat.param \enducd& Parameter\\
+Q & \ucd stat.percentile \enducd& Percentile of a statistical distribution\\
 Q & \ucd stat.probability \enducd& Probability\\
 P & \ucd stat.rank \enducd& Rank or order in list of sorted values\\
 P & \ucd stat.rms \enducd& Root mean square as square root of sum of squared values or quadratic mean\\
+P & \ucd stat.skewness \enducd& Skewness of a probability distribution (third moment)\\
 P & \ucd stat.snr \enducd& Signal to noise ratio\\
 P & \ucd stat.stdev \enducd& Standard deviation as the square root of the variance\\
 S & \ucd stat.uncalib \enducd& Qualifier of a generic uncalibrated quantity\\
