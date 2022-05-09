@@ -157,8 +157,8 @@ P | meta.ref.doi                      |  DOI identifier (dereferenceable)
 P | meta.ref.epic                     |  ePIC identifier (dereferenceable)
 Q | meta.ref.ivoid                    |  Identifier as recommended  in the IVOA  (dereferenceable)
 P | meta.ref.orcid                    |  ORCID identifier for people working in research (dereferenceable)
+P | meta.ref.pid                      |  Generic Persistent Identifier (dereferenceable)
 P | meta.ref.rorid                    |  ROR unique and persistent identifier for research organizations 
-P | meta.ref.pid                      |  Persistent Identifier (dereferenceable)
 P | meta.ref.uri                      |  URI, universal resource identifier                                             
 P | meta.ref.url                      |  URL, web address                                                              
 S | meta.software                     |  Software used in generating data                                              
