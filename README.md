@@ -62,6 +62,19 @@ DOC) should be stored in this repository.
 
 _This process has been described and demonstrated during the IVOA Interoperability Meeting of Oct. 2019 in Groningen ; see [slides](https://wiki.ivoa.net/internal/IVOA/InterOpOct2019GitHub/IVOA_Github.pdf))_
 
+## Maintaining the term list
+
+This is done by the document editor; as a normal contributor, do *not* run 
+make generate.
+
+After any change to ucd-list.txt or ucd-list-deprecated.txt, the
+document editor has to do two things:
+
+(a) make sure the change is documented in the appropriate "Changes
+    from..." section.
+
+(b) run ``make generate`` to update the in-document representation of
+    the two files.
 
 # License 
 
