@@ -31,4 +31,16 @@ VECTORFIGURES =
 # Additional files to distribute (e.g., CSS, schema files, examples...)
 AUX_FILES = localrefs.bib ucd-list.txt ucd-list-deprecated.txt
 
-include ivoatex/Makefile
+-include ivoatex/Makefile
+
+ivoatex/Makefile:
+	@echo "*** ivoatex submodule not found.  Initialising submodules."
+	@echo
+	git submodule update --init
+
+# dependency: a POSIX-compliant sort
+test:
+	@sort -t '|' -k 2 -f -c ucd-list-deprecated.txt
+	@sort -t '|' -k 2 -f -c ucd-list.txt
+
+
