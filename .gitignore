@@ -1,0 +1,18 @@
+*.blg
+*.toc
+*.out
+*.pdf
+*.aux
+*.bbl
+ivoatexmeta.tex
+*.log
+*.html
+*.zip
+*.fdb_latexmk
+*.fls
+gitmeta.tex
+*.swp
+role_diagram.svg
+
+# OS-specific
+.DS_Store
