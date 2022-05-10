@@ -286,8 +286,8 @@ P & \ucd meta.ref.doi \enducd& DOI identifier (dereferenceable)\\
 P & \ucd meta.ref.epic \enducd& ePIC identifier (dereferenceable)\\
 Q & \ucd meta.ref.ivoid \enducd& Identifier as recommended  in the IVOA  (dereferenceable)\\
 P & \ucd meta.ref.orcid \enducd& ORCID identifier for people working in research (dereferenceable)\\
-P & \ucd meta.ref.rorid \enducd& ROR unique and persistent identifier for research organizations\\
 P & \ucd meta.ref.pid \enducd& Persistent Identifier (dereferenceable)\\
+P & \ucd meta.ref.rorid \enducd& ROR unique and persistent identifier for research organizations\\
 P & \ucd meta.ref.uri \enducd& URI, universal resource identifier\\
 P & \ucd meta.ref.url \enducd& URL, web address\\
 S & \ucd meta.software \enducd& Software used in generating data\\
@@ -856,9 +856,10 @@ Comment rows are starting with a \texttt{\#} (hash) character.
 
 \subsubsection*{Ammendment}
 \emph{meta.curation} changed to Q to allow combination as secondary term. The former usage \emph{meta.curation} for the id or name of a curator is discouraged. \emph{meta.id;meta.curation} is recommended instead.
+\emph{instr.fov} description with ``related to'' to make it work better as an S atom.
 
 \subsubsection*{Deprecation}
-None
+\emph{meta.ref.ivorn} removed and inserted in ucd-list-deprecated.txt.
 
 \subsection{Changes from v1.4}
 
