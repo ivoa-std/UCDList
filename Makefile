@@ -31,6 +31,8 @@ VECTORFIGURES =
 # Additional files to distribute (e.g., CSS, schema files, examples...)
 AUX_FILES = localrefs.bib ucd-list.txt ucd-list-deprecated.txt
 
+DOCREPO_BASEURL=https://ivoa.net/documents/UCD1+
+
 -include ivoatex/Makefile
 
 ivoatex/Makefile:
