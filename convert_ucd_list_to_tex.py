@@ -11,7 +11,8 @@ def ucd_to_tex(file):
     with open(file, 'r') as f:
         lines = f.readlines()
         for cur_line in lines:
-            convert_line(cur_line)
+            if not cur_line.startswith("#"):
+                 convert_line(cur_line)
 
 if __name__ == '__main__':
     argv = sys.argv[1:]
