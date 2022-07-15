@@ -813,18 +813,24 @@ Their content is described below.
 \subsection{UCD List file}
 The \texttt{ucd-list.txt} file is a plain text formatted table with
 three columns.
-It is the source file of Table \ref{table:ucd-list}.
+It is the source file of Table \ref{table:ucd-list}. It contains all UCD terms validated for this version of this IVOA Note.
 
 The columns are separated by \texttt{|} (pipe) characters. From left to right, the 
-columns contain, respectively, the \emph{syntax code}, the \emph{UCD word}, and its
-\emph{description}. 
+columns contain, respectively, the \emph{positional syntax code}, the \emph{UCD word}, and its
+\emph{standard definition}. 
 
 \subsection{Deprecated UCD List file}
 The \texttt{ucd-list-deprecated.txt} file is a plain text formatted table with two
 columns separated by a whitespace character. The first column contains the deprecated 
-UCD words, while the second contains word that should be used instead.
+UCD words, while the second contains the UCD term that should be used instead.
 
-Comment rows are starting with a \texttt{\#} (hash) character.
+NB: Comment rows are starting with a \texttt{\#} (hash) character. \\
+The first row of each of these files contains a comment line with the version tag following this syntax:\\
+\verbatim{$DOCTYPE-$DOCNAME-v$DOCVERSION-$DOCDATE}
+such as PEN-UCDList-v1.5-20220706 for instance .
+Caveat : Only the lists with version starting by EN-UCDList-... are valid reference for UCD terms or deprecated terms. 
+They correspond to the Endorsed Note at the final step of the update cycle. 
+Others are only work-in-progress and should not be referenced. 
 
 \section{Changes from previous versions}
 \subsection{Changes from UCDList EN v1.4 following RFM}
