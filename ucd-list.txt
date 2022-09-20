@@ -1,6 +1,6 @@
 #PEN-UCDlist-v1.5-2022-09-20
 Q | arith                             |  Arithmetic quantities
-S | arith.diff                        |  Difference between two quantities described by the same UCD                   
+S | arith.diff                        |  Difference between two quantities described by the same UCD
 P | arith.factor                      |  Numerical factor
 P | arith.grad                        |  Gradient
 P | arith.rate                        |  Rate (per time unit)
@@ -97,7 +97,7 @@ S | instr.filter                      |  Filter
 S | instr.fov                         |  Related to the field of view
 S | instr.obsty                       |  Observatory, satellite, mission
 Q | instr.obsty.seeing                |  Seeing
-Q | instr.offset                      |  Offset angle respect to main direction of observation
+Q | instr.offset                      |  Offset angle with respect to main direction of observation
 Q | instr.order                       |  Spectral order in a spectrograph
 Q | instr.param                       |  Various instrumental parameters
 S | instr.pixel                       |  Pixel (default size: angular)
