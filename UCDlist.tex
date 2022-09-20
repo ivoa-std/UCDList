@@ -10,6 +10,7 @@
 \usepackage{array}
 \usepackage{natbib} 
 % \usepackage{enumitem} 
+
 \title{UCD1+ controlled vocabulary - \emph{Updated List of Terms}}
 
 % having descriptions in a narrow column is painful -- the following
@@ -760,7 +761,7 @@ They are exposed with a syntax tag given as a property of each UCD word
 and included in the list of UCD words. See Section \ref{sec:list} with the tags definitions on top.
 
 They correspond to real usage of the terms in science publications and are attached to the description 
-of catalogues’ column by experimented data scientists. UCD combination also reflects the catalogues 
+of catalogues' column by experimented data scientists. UCD combination also reflects the catalogues 
 build-up strategy. Errors and statistics, for instance, are provided with measurement values; measures 
 and model comparison are evaluated with error fits, precision, etc. All the scientific knowledge helps 
 to define appropriate UCD words combination.
@@ -803,28 +804,46 @@ for other details.
 
 \section{Associated Files}
 This document comes with two plain text files:
-%mir auxiliary function does not work \texttt{ucd-list.txt}\footnote{https://ivoa.net/documents/UCD1+/ucd-list.txt}} and 
-\texttt{ucd-list.txt}\footnote{\url{https://ivoa.net/documents/UCD1+/20220706/ucd-list.txt}} and 
-%mir auxiliary does not work \texttt{ucd-list-deprecated.txt}\footnote{\auxiliaryurl{ucd-list-deprecated.txt}}. 
-\texttt{ucd-list-deprecated.txt}\footnote{\url{https://ivoa.net/documents/UCD1+/20220706/ucd-list-deprecated.txt}}. 
-
+\texttt{ucd-list.txt}\footnote{\auxiliaryurl{ucd-list.txt}} and 
+\texttt{ucd-list-deprecated.txt}\footnote{\auxiliaryurl{ucd-list-deprecated.txt}}. 
 Their content is described below. 
 
+To simplify the distribution of these files with common software
+products, they are distributed under the Creative Commons CC0 public
+domain dedication.\footnote{\url{http://creativecommons.org/publicdomain/zero/1.0/}}
+
 \subsection{UCD List file}
-The \texttt{ucd-list.txt} file is a plain text formatted table with
-three columns.
-It is the source file of Table \ref{table:ucd-list}.
+The \texttt{ucd-list.txt} file is a plain text formatted table with three columns.
+It is the source file of Table \ref{table:ucd-list}. It contains all UCD terms validated 
+for this version of this IVOA Note.
 
 The columns are separated by \texttt{|} (pipe) characters. From left to right, the 
-columns contain, respectively, the \emph{syntax code}, the \emph{UCD word}, and its
-\emph{description}. 
+columns contain, respectively, the \emph{positional syntax code}, the \emph{UCD word}, and its
+\emph{standard definition}. 
 
 \subsection{Deprecated UCD List file}
 The \texttt{ucd-list-deprecated.txt} file is a plain text formatted table with two
 columns separated by a whitespace character. The first column contains the deprecated 
-UCD words, while the second contains word that should be used instead.
+UCD words, while the second contains the UCD term that should be used instead.
+
+\subsection{Comments in file}
 
 Comment rows are starting with a \texttt{\#} (hash) character.
+
+\subsection{Version tags in file}
+
+The first line of each of these files is a comment line containing the UCDList version 
+tag following the pattern
+\verb|#$DOCTYPE-$DOCNAME-v$DOCVERSION-$DOCDATE|, where the
+variable names are taken from ivoatex \citep{ivoatexDoc}.  For a
+pre-release list, such a first line might look like
+\verb|#PEN-UCDlist-v1.5-20220706|.
+
+Solely the lists with version starting by \texttt{EN-UCDList} are valid reference for UCD 
+terms or deprecated terms. They correspond to the Endorsed Note at the final step of the 
+update cycle. Others are only work-in-progress and are only intended
+for review.   They should, in particular, not be distributed with
+external software products.
 
 \section{Changes from previous versions}
 \subsection{Changes from UCDList EN v1.4 following RFM}

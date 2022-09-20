@@ -1,3 +1,4 @@
+#PEN-UCDlist-v1.5-2022-07-15
 Q | arith                             |  Arithmetic quantities                                                         
 S | arith.diff                        |  Difference between two quantities described by the same UCD                   
 P | arith.factor                      |  Numerical factor                                                              
@@ -552,3 +553,4 @@ Q | time.release                      |  The time/date data is available to the 
 Q | time.resolution                   |  Time resolution                                                               
 Q | time.scale                        |  Timescale
 Q | time.start                        |  Start time/date of generic event
+# This file distributed under CC-0 by the IVOA

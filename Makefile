@@ -7,7 +7,7 @@ DOCNAME = UCDlist
 DOCVERSION = 1.5
 
 # Publication date, ISO format; update manually for "releases"
-DOCDATE = 2022-07-06
+DOCDATE = 2022-09-20
 
 # What is it you're writing: NOTE, WD, PR, REC, PEN, or EN
 DOCTYPE = PEN
@@ -41,4 +41,4 @@ ivoatex/Makefile:
 	git submodule update --init
 
 test:
-	@echo "No tests defined yet"
+	@sh assert-version-tag.sh $(DOCTYPE) $(DOCNAME) $(DOCVERSION) $(DOCDATE)
