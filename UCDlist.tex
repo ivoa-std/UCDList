@@ -833,8 +833,11 @@ Comment rows are starting with a \texttt{\#} (hash) character.
 \subsection{Version tags in file}
 
 The first line of each of these files is a comment line containing the UCDList version 
-tag following this syntax: \texttt{\$DOCTYPE-\$DOCNAME-v\$DOCVERSION-\$DOCDATE}, such as, 
-e.g., \texttt{PEN-UCDlist-v1.5-20220706}.
+tag following the pattern
+\verb|#$DOCTYPE-$DOCNAME-v$DOCVERSION-$DOCDATE|, where the
+variable names are taken from ivoatex \citep{ivoatexDoc}.  For a
+pre-release list, such a first line might look like
+\verb|#PEN-UCDlist-v1.5-20220706|.
 
 Solely the lists with version starting by \texttt{EN-UCDList} are valid reference for UCD 
 terms or deprecated terms. They correspond to the Endorsed Note at the final step of the 

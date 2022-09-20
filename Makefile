@@ -41,4 +41,4 @@ ivoatex/Makefile:
 	git submodule update --init
 
 test:
-	@echo "No tests defined yet"
+	@sh assert-version-tag.sh $(DOCTYPE) $(DOCNAME) $(DOCVERSION) $(DOCDATE)
