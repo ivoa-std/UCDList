@@ -553,3 +553,4 @@ Q | time.release                      |  The time/date data is available to the 
 Q | time.resolution                   |  Time resolution                                                               
 Q | time.scale                        |  Timescale
 Q | time.start                        |  Start time/date of generic event
+# This file distributed under CC-0 by the IVOA

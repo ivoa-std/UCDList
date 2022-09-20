@@ -11,17 +11,6 @@
 \usepackage{natbib} 
 % \usepackage{enumitem} 
 
-% Fixing specific BASEURL for this document
-\renewcommand{\ivoaBaseURL}{https://www.ivoa.net/documents/UCD1+}
-\renewcommand\currentDocURL % 
-	{\ivoaBaseURL/\ivoaDocdatecode}
-\renewcommand\currentDocRef % formatted reference to this document's landing page
-	{\href{\currentDocURL}{\currentDocURL}}
-\renewcommand\latestDocRef 
-	% formatted reference to a potential successor to the document's landing page
-	{\href{\ivoaBaseURL}{\ivoaBaseURL}}
-\renewcommand{\auxiliaryurl}[1]{\href{\currentDocURL/#1}{\currentDocURL/#1}}
-
 \title{UCD1+ controlled vocabulary - \emph{Updated List of Terms}}
 
 % having descriptions in a narrow column is painful -- the following
@@ -819,6 +808,10 @@ This document comes with two plain text files:
 \texttt{ucd-list-deprecated.txt}\footnote{\auxiliaryurl{ucd-list-deprecated.txt}}. 
 Their content is described below. 
 
+To simplify the distribution of these files with common software
+products, they are distributed under the Creative Commons CC0 public
+domain dedication.\footnote{\url{http://creativecommons.org/publicdomain/zero/1.0/}}
+
 \subsection{UCD List file}
 The \texttt{ucd-list.txt} file is a plain text formatted table with three columns.
 It is the source file of Table \ref{table:ucd-list}. It contains all UCD terms validated 
@@ -839,13 +832,15 @@ Comment rows are starting with a \texttt{\#} (hash) character.
 
 \subsection{Version tags in file}
 
-The first row of each of these files is a comment line containing the UCDList version 
+The first line of each of these files is a comment line containing the UCDList version 
 tag following this syntax: \texttt{\$DOCTYPE-\$DOCNAME-v\$DOCVERSION-\$DOCDATE}, such as, 
 e.g., \texttt{PEN-UCDlist-v1.5-20220706}.
 
 Solely the lists with version starting by \texttt{EN-UCDList} are valid reference for UCD 
 terms or deprecated terms. They correspond to the Endorsed Note at the final step of the 
-update cycle. Others are only work-in-progress and should not be referenced. 
+update cycle. Others are only work-in-progress and are only intended
+for review.   They should, in particular, not be distributed with
+external software products.
 
 \section{Changes from previous versions}
 \subsection{Changes from UCDList EN v1.4 following RFM}
