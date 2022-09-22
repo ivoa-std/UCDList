@@ -1,6 +1,6 @@
-#PEN-UCDlist-v1.5-2022-07-15
+#PEN-UCDlist-v1.5-2022-09-20
 # This file contains lists suggested replacements for UCD1+ which are deprecated
-# deprecated_term  replacement_term 
+# deprecated_term  replacement_term
 em.IR.K.Brgamma em.line.Brgamma
 em.opt.B.Hbeta em.line.Hbeta
 em.opt.R.Halpha em.line.Halpha

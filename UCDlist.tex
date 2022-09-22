@@ -36,8 +36,14 @@
 
 \editor[mailto:baptiste.cecconi@obspm.fr]{Baptiste Cecconi, Mireille Louys}
 
-\previousversion[https://www.ivoa.net/documents/UCD1+/20210616/EN-UCDlist-1.4-20210616.pdf]{UCD1+ 
-controlled vocabulary-Updated List of terms Version 1.4}
+\previousversion[https://www.ivoa.net/documents/UCD1+/20210616]{UCD1+ EN
+1.4, 2021-06-16}
+\previousversion[https://ivoa.net/documents/UCD1+/20180527/index.html]{UCD1+
+REC 1.3, 2018-05-27}
+\previousversion[https://ivoa.net/documents/cover/UCDlist-20070402.html]{UCD1+
+REC 1.23, 2007-04-02}
+\previousversion[https://ivoa.net/documents/cover/UCDlist-20051231.html]{UCD1+
+REC 1.11, 2005-12-31}
 
 \setcounter{secnumdepth}{5}  
 
@@ -45,9 +51,8 @@ controlled vocabulary-Updated List of terms Version 1.4}
 \begin{abstract}
 This document describes the \emph{list of controlled terms}  building up the corpus of the Unified Content Descriptors, Version 1+ (UCD1+). 
 
-The document describing the UCD1+ principles can be found at the URL: \url{https://ivoa.net/documents/UCD1+/20180527/index.html}. 
-It is an IVOA Recommendation. 
-The process to maintain and enrich the UCD list of terms is standardized in  \url{https://ivoa.net/documents/UCDlistMaintenance/}.
+The document describing the UCD1+ principles is an IVOA Recommendation \citep{2018ivoa.spec.0527P},
+The process to maintain and enrich the UCD list of terms is standardized in   \citep{2019ivoa.spec.1007G}.
 It states that successive versions of the UCD1+ vocabulary are distributed in Endorsed Notes within the IVOA.
 
 The changes with respect to the version UCDList1.4 have been discussed in the request for modification (RFM) page on (\url{https://wiki.ivoa.net/twiki/bin/view/IVOA/UCDList_1-5_RFM}) within the IVOA Semantics WG and validated by the UCD science board.
@@ -202,7 +207,7 @@ S & \ucd{instr.filter}& Filter\\
 S & \ucd{instr.fov}& Related to the field of view\\
 S & \ucd{instr.obsty}& Observatory, satellite, mission\\
 Q & \ucd{instr.obsty.seeing}& Seeing\\
-Q & \ucd{instr.offset}& Offset angle respect to main direction of observation\\
+Q & \ucd{instr.offset}& Offset angle with respect to main direction of observation\\
 Q & \ucd{instr.order}& Spectral order in a spectrograph\\
 Q & \ucd{instr.param}& Various instrumental parameters\\
 S & \ucd{instr.pixel}& Pixel (default size: angular)\\
@@ -760,8 +765,9 @@ The combination rules have been defined in the first IVOA documents defining UCD
 They are exposed with a syntax tag given as a property of each UCD word 
 and included in the list of UCD words. See Section \ref{sec:list} with the tags definitions on top.
 
-They correspond to real usage of the terms in science publications and are attached to the description 
-of catalogues' column by experimented data scientists. UCD combination also reflects the catalogues 
+They correspond to real usage of the terms in science publications and are
+assigned to catalogue columns by experienced data scientists.
+UCD combination also reflects the catalogues 
 build-up strategy. Errors and statistics, for instance, are provided with measurement values; measures 
 and model comparison are evaluated with error fits, precision, etc. All the scientific knowledge helps 
 to define appropriate UCD words combination.
@@ -828,7 +834,7 @@ UCD words, while the second contains the UCD term that should be used instead.
 
 \subsection{Comments in file}
 
-Comment rows are starting with a \texttt{\#} (hash) character.
+Comment lines are starting with a \texttt{\#} (hash) character.
 
 \subsection{Version tags in file}
 
