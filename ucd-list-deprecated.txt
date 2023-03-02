@@ -1,4 +1,4 @@
-#EN-UCDlist-v1.5-2023-03-02
+#EN-UCDlist-v1.5-2023-01-25
 # This file contains lists suggested replacements for UCD1+ which are deprecated
 # deprecated_term  replacement_term
 em.IR.K.Brgamma em.line.Brgamma
