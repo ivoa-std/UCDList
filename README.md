@@ -27,9 +27,9 @@ Recommandation](http://www.ivoa.net/documents/latest/UCDlistMaintenance.html).
 ## Status?
 
 The last stable version is
-**[EN-1.4](https://www.ivoa.net/documents/UCD1+/20210616/index.html)**.
+**[EN-1.5](https://www.ivoa.net/documents/UCD1+/20230125/index.html)**.
 
-Next version will be 1.5, as an _Endorsed Note_. It is prepared in this reporsitory. 
+Next version will be 1.6, as an _Proposed Endorsed Note_. It will be prepared in this repository. 
  _It is not yet finalized and so, should not be considered yet as stable for 
 operational implementation._
 
