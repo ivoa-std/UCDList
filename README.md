@@ -1,4 +1,4 @@
-![UCDList version](https://img.shields.io/badge/UCDList-PEN--1.5-yellow.svg)
+![UCDList version](https://img.shields.io/badge/UCDList-EN--1.5-green.svg)
 [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)](http://creativecommons.org/licenses/by/4.0/)
 
 # UCDList
