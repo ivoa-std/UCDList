@@ -1,4 +1,4 @@
-#EN-UCDlist-v1.5-2023-01-25
+#PEN-UCDlist-v1.5-2024-09-11
 # This file contains lists suggested replacements for UCD1+ which are deprecated
 # deprecated_term  replacement_term
 em.IR.K.Brgamma em.line.Brgamma
@@ -100,6 +100,7 @@ pos.eq.dec.arcsec  pos.eq.dec
 pos.eq.ra.minutes pos.eq.ra
 pos.eq.ra.seconds pos.eq.ra
 pos.gal.compon pos.cartesian;pos.galactic
+
 pos.sg.compon pos.cartesian;pos.supergalactic
 src.class.star-galaxy src.class.starGalaxy
 src.orbital.energy phys.energy;src.orbital
@@ -214,4 +215,7 @@ em.UV.FUV em.UV.100-200nm
 meta.ref.ivorn meta.ref.ivoid
 pos.bodyrc.long pos.bodyrc.lon
 pos.eop.nutation pos.nutation
+#Changes from 1.5 to 1.6
+pos.lambert pos.projection
+
 # This file distributed under CC-0 by the IVOA.
