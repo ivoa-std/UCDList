@@ -133,9 +133,7 @@ P | meta.code.mime                    |  MIME type
 P | meta.code.multip                  |  Multiplicity or binarity flag
 P | meta.code.qual                    |  Quality, precision, reliability flag or code
 P | meta.code.status                  |  Status code (e.g.: status of a proposal/observation)
-Q | meta.coverage                     |  A coverage (spatial, temporal, spectral, etc)
-with any combination of physical axis (such as moc, tmoc, stmoc, s_region).
-
+Q | meta.coverage                     |  A coverage (spatial, temporal, spectral, etc) with any combination of physical axes (such as moc, tmoc, stmoc)
 P | meta.cryptic                      |  Unknown or impossible to understand quantity
 Q | meta.curation                     |  Parameter informing about the curation of the data
 Q | meta.dataset                      |  Dataset

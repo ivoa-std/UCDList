@@ -1,4 +1,4 @@
-#PEN-UCDlist-v1.5-2024-09-11
+#PEN-UCDlist-v1.6-2024-09-11
 # This file contains lists suggested replacements for UCD1+ which are deprecated
 # deprecated_term  replacement_term
 em.IR.K.Brgamma em.line.Brgamma
@@ -217,5 +217,4 @@ pos.bodyrc.long pos.bodyrc.lon
 pos.eop.nutation pos.nutation
 #Changes from 1.5 to 1.6
 pos.lambert pos.projection
-
 # This file distributed under CC-0 by the IVOA.
