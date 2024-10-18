@@ -35,7 +35,8 @@
 \author{Markus Demleitner}
 
 \editor[mailto:baptiste.cecconi@obspm.fr]{Baptiste Cecconi, Mireille Louys}
-
+\previousversion[https://www.ivoa.net/documents/UCD1+/20210616]{UCD1+ EN
+1.5, 2023-01-25}
 \previousversion[https://www.ivoa.net/documents/UCD1+/20210616]{UCD1+ EN
 1.4, 2021-06-16}
 \previousversion[https://ivoa.net/documents/UCD1+/20180527/index.html]{UCD1+
@@ -243,6 +244,7 @@ P & \ucd{meta.code.mime}& MIME type\\
 P & \ucd{meta.code.multip}& Multiplicity or binarity flag\\
 P & \ucd{meta.code.qual}& Quality, precision, reliability flag or code\\
 P & \ucd{meta.code.status}& Status code (e.g.: status of a proposal/observation)\\
+Q & \ucd{meta.coverage}& A coverage (spatial, temporal, spectral, etc) with any combination of physical axes (such as moc, tmoc, stmoc)\\
 P & \ucd{meta.cryptic}& Unknown or impossible to understand quantity\\
 Q & \ucd{meta.curation}& Parameter informing about the curation of the data\\
 Q & \ucd{meta.dataset}& Dataset\\
@@ -282,7 +284,13 @@ S & \ucd{obs}& Observation\\
 Q & \ucd{obs.airMass}& Airmass\\
 S & \ucd{obs.atmos}& Atmosphere, atmospheric phenomena affecting an observation\\
 Q & \ucd{obs.atmos.extinction}& Atmospheric extinction\\
+Q & \ucd{obs.atmos.humidity}& Amount of air humidity at observing site during an observation\\
+Q & \ucd{obs.atmos.rain}& Amount of rain at the telescope site during an observation\\
 Q & \ucd{obs.atmos.refractAngle}& Atmospheric refraction angle\\
+S & \ucd{obs.atmos.turbulence}& Related to atmospheric turbulence at the telescope site\\
+P & \ucd{obs.atmos.turbulence.isoplanatic}& Isoplanatic angle characterising the atmospheric turbulence at telescope site\\
+Q & \ucd{obs.atmos.water}& Amount of atmospheric water at observing site\\
+S & \ucd{obs.atmos.wind}& Related to atmospheric wind at observing site\\
 S & \ucd{obs.calib}& Calibration observation\\
 S & \ucd{obs.calib.flat}& Related to flat-field calibration observation (dome, sky, ..)\\
 S & \ucd{obs.calib.dark}& Related to dark current calibration\\
@@ -398,6 +406,7 @@ Q & \ucd{phys.flux}& Flux or flow of particle, energy, etc.\\
 Q & \ucd{phys.flux.energy}& Energy flux, heat flux\\
 Q & \ucd{phys.gauntFactor}& Gaunt factor/correction\\
 Q & \ucd{phys.gravity}& Gravity\\
+Q & \ucd{phys.inspiralSpin}& Effective inspiral spin in binary mergers (used in GW detections)\\
 Q & \ucd{phys.ionizParam}& Ionization parameter\\
 Q & \ucd{phys.ionizParam.coll}& Collisional ionization\\
 Q & \ucd{phys.ionizParam.rad}& Radiative ionization\\
@@ -451,6 +460,7 @@ Q & \ucd{phys.size.smajAxis}& Linear semi major axis\\
 Q & \ucd{phys.size.sminAxis}& Linear semi minor axis\\
 Q & \ucd{phys.size.smedAxis}& Linear semi median axis for 3D ellipsoids\\
 Q & \ucd{phys.temperature}& Temperature\\
+Q & \ucd{phys.temperature.dew}& Dew temperature measured at the telescope site during an observation\\
 Q & \ucd{phys.temperature.effective}& Effective temperature\\
 Q & \ucd{phys.temperature.electron}& Electron temperature\\
 Q & \ucd{phys.transmission}& Transmission (of filter, instrument, ...)\\
@@ -466,6 +476,7 @@ Q & \ucd{phys.veloc.rotat}& Rotational velocity\\
 Q & \ucd{phys.veloc.transverse}& Transverse / tangential velocity\\
 S & \ucd{phys.virial}& Related to virial quantities (mass, radius, ...)\\
 Q & \ucd{phys.volume}& Volume (in cubic units)\\
+Q & \ucd{phys.voltage}& Electric potential difference over a distance or measured by an instrument\\
 Q & \ucd{pos}& Position and coordinates\\
 Q & \ucd{pos.angDistance}& Angular distance, elongation\\
 Q & \ucd{pos.angResolution}& Angular resolution\\
@@ -519,7 +530,6 @@ Q & \ucd{pos.healpix}& Hierarchical Equal Area IsoLatitude Pixelization\\
 S & \ucd{pos.heliocentric}& Heliocentric position coordinate (solar system bodies)\\
 Q & \ucd{pos.HTM}& Hierarchical Triangular Mesh\\
 Q & \ucd{pos.incidenceAng}& Incidence angle of optical ray on an interface\\
-S & \ucd{pos.lambert}& Lambert projection\\
 S & \ucd{pos.lg}& Local Group reference frame\\
 S & \ucd{pos.lsr}& Local Standard of Rest reference frame\\
 Q & \ucd{pos.lunar}& Lunar coordinates\\
@@ -535,6 +545,7 @@ Q & \ucd{pos.phaseAng}& Phase angle, e.g. elongation of earth from sun as seen f
 V & \ucd{pos.pm}& Proper motion\\
 Q & \ucd{pos.posAng}& Position angle of a given vector\\
 V & \ucd{pos.precess}& Precession (in equatorial coordinates)\\
+Q & \ucd{pos.projection}& 2D spatial projection\\
 Q & \ucd{pos.resolution}& Spatial linear resolution (not angular)\\
 S & \ucd{pos.spherical}& Related to spherical coordinates\\
 Q & \ucd{pos.spherical.azi}& Azimuthal angle (spherical coordinates)\\
@@ -607,10 +618,13 @@ Q & \ucd{src.var.index}& Variability index\\
 Q & \ucd{src.var.pulse}& Pulse\\
 Q & \ucd{stat}& Statistical parameters\\
 Q & \ucd{stat.asymmetry}& Measure of asymmetry\\
+P & \ucd{stat.confidenceLevel}& Level of confidence for a detection or classification process\\
 P & \ucd{stat.correlation}& Correlation between two parameters\\
 P & \ucd{stat.covariance}& Covariance between two parameters\\
 P & \ucd{stat.error}& Statistical error\\
 P & \ucd{stat.error.sys}& Systematic error\\
+Q & \ucd{stat.falsePositive}& Rate of false alarm in detection problems\\
+Q & \ucd{stat.falseNegative}& Rate of missed or false negative detection\\
 Q & \ucd{stat.filling}& Filling factor (volume, time, ...)\\
 Q & \ucd{stat.fit}& Fit\\
 P & \ucd{stat.fit.chi2}& Chi2\\
@@ -637,7 +651,7 @@ P & \ucd{stat.rank}& Rank or order in list of sorted values\\
 P & \ucd{stat.rms}& Root mean square as square root of sum of squared values or quadratic mean\\
 P & \ucd{stat.skewness}& Skewness of a probability distribution (third moment)\\
 P & \ucd{stat.snr}& Signal to noise ratio\\
-P & \ucd{stat.stdev}& Standard deviation as the square root of the variance\\
+Q & \ucd{stat.stdev}& Standard deviation as the square root of the variance\\
 S & \ucd{stat.uncalib}& Qualifier of a generic uncalibrated quantity\\
 Q & \ucd{stat.value}& Miscellaneous value\\
 P & \ucd{stat.variance}& Variance\\
@@ -653,6 +667,7 @@ Q & \ucd{time.equinox}& Equinox\\
 Q & \ucd{time.interval}& Time interval, time-bin, time elapsed between two events, not the duration of an event\\
 Q & \ucd{time.lifetime}& Lifetime\\
 Q & \ucd{time.period}& Period, interval of time between the recurrence of phases in a periodic phenomenon\\
+Q & \ucd{time.period.pulsation}& Period of pulsation or oscillation of a body or a phenomenon\\
 Q & \ucd{time.period.revolution}& Period of revolution of a body around a primary one (similar to year)\\
 Q & \ucd{time.period.rotation}& Period of rotation of a body around its axis (similar to day)\\
 Q & \ucd{time.phase}& Phase, position within a period\\
@@ -852,6 +867,36 @@ for review.   They should, in particular, not be distributed with
 external software products.
 
 \section{Changes from previous versions}
+\subsection{Changes from UCDList EN v1.5 following RFM}
+\subsubsection*{Additions}
+\begin{itemize}
+\item meta.coverage
+\item time.period.pulsation
+\item stat.confidenceLevel 
+\item stat.falseNegative
+\item stat.falsePositive
+\item phys.inspiralSpin
+\item phys.voltage
+\end{itemize}
+Atmospheric measures at the telescope site :
+\begin{itemize}
+\item obs.atmos.humidity
+\item obs.atmos.rain
+\item obs.atmos.turbulence 
+\item obs.atmos.turbulence.isoplanatic
+\item obs.atmos.water
+\item obs.atmos.wind
+\item phys.temperature.dew
+\end{itemize}
+
+\subsubsection*{Amendment}
+Change position tag of stat.stdev to Q in order to combine it to stat.confidenceLevel, for instance  
+
+\subsubsection*{Deletion}
+Deprecate term \emph{pos.lambert} (appearing in one table only) and propose \emph{pos.projection} instead.
+In the future  setting up a VO vocabulary to record  projection names and identifiers together with the associated 
+parameters if needed, as defined in the Calabreta  and Greisen FITS Paper  \citep{2002A&A...395.1077C} on table 13.
+
 \subsection{Changes from UCDList EN v1.4 following RFM}
 \subsubsection*{Additions}
 \ucd{stat.skewness}, \ucd{stat.kurtosis},\ucd{stat.mad} \\
