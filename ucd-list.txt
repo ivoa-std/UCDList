@@ -1,4 +1,4 @@
-#PEN-UCDlist-v1.6-2024-09-11
+#PEN-UCDlist-v1.6-2024-09-19
 Q | arith                             |  Arithmetic quantities
 S | arith.diff                        |  Difference between two quantities described by the same UCD
 P | arith.factor                      |  Numerical factor
