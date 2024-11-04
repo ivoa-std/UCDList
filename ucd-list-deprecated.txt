@@ -1,4 +1,4 @@
-#PEN-UCDlist-v1.6-2024-09-11
+#PEN-UCDlist-v1.6-2024-09-19
 # This file contains lists suggested replacements for UCD1+ which are deprecated
 # deprecated_term  replacement_term
 em.IR.K.Brgamma em.line.Brgamma
