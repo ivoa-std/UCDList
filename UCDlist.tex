@@ -613,7 +613,7 @@ Q & \ucd{src.redshift.phot}& Photometric redshift\\
 Q & \ucd{src.sample}& Sample\\
 Q & \ucd{src.spType}& Spectral type MK\\
 Q & \ucd{src.var}& Variability of source\\
-E & \ucd{src.var.amplitude}& Amplitude of variation\\
+Q & \ucd{src.var.amplitude}& Amplitude of variation\\
 Q & \ucd{src.var.index}& Variability index\\
 Q & \ucd{src.var.pulse}& Pulse\\
 Q & \ucd{stat}& Statistical parameters\\
@@ -890,7 +890,10 @@ Atmospheric measures at the telescope site :
 \end{itemize}
 
 \subsubsection*{Amendment}
-Change position tag of stat.stdev to Q in order to combine it to stat.confidenceLevel, for instance  
+\begin{itemize}
+\item Change position tag of stat.stdev to Q in order to combine it to stat.confidenceLevel, for instance  
+\item Change syntax flag of \ucd{src.var.amplitude} from E to Q.
+\end{itemize}
 
 \subsubsection*{Deletion}
 Deprecate term \emph{pos.lambert} (appearing in one table only) and propose \emph{pos.projection} instead.
