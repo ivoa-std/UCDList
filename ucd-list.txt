@@ -502,7 +502,7 @@ Q | src.redshift.phot                 |  Photometric redshift
 Q | src.sample                        |  Sample
 Q | src.spType                        |  Spectral type MK
 Q | src.var                           |  Variability of source
-E | src.var.amplitude                 |  Amplitude of variation
+Q | src.var.amplitude                 |  Amplitude of variation
 Q | src.var.index                     |  Variability index
 Q | src.var.pulse                     |  Pulse
 Q | stat                              |  Statistical parameters
