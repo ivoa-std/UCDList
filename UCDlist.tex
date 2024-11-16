@@ -34,7 +34,7 @@
 \author{St\'ephane Erard}
 \author{Markus Demleitner}
 
-\editor[mailto:baptiste.cecconi@obspm.fr]{Baptiste Cecconi, Mireille Louys}
+\editor[mailto:baptiste.cecconi@obspm.fr]{Baptiste Cecconi, Mireille Louys, S\'ebastien Derriere}
 \previousversion[https://www.ivoa.net/documents/UCD1+/20210616]{UCD1+ EN
 1.5, 2023-01-25}
 \previousversion[https://www.ivoa.net/documents/UCD1+/20210616]{UCD1+ EN
@@ -777,8 +777,8 @@ they are now also used in VOTable documents for planetary data \citep{2022ivoa.s
 \subsection{Remarks on combination rules}
 The combination rules have been defined in the first IVOA documents defining UCD concept
 \citep{2005ivoa.spec.0819D} and refined in the last UCD1+ standard recommendation \citep{2018ivoa.spec.0527P}. 
-They are exposed with a syntax tag given as a property of each UCD word 
-and included in the list of UCD words. See Section \ref{sec:list} with the tags definitions on top.
+They are exposed with a syntax code given as a property of each UCD word 
+and included in the list of UCD words. See Section \ref{sec:list} with the codes definitions on top.
 
 They correspond to real usage of the terms in science publications and are
 assigned to catalogue columns by experienced data scientists.
@@ -891,8 +891,8 @@ Atmospheric measures at the telescope site :
 
 \subsubsection*{Amendment}
 \begin{itemize}
-\item Change position tag of stat.stdev to Q in order to combine it to stat.confidenceLevel, for instance  
-\item Change syntax flag of \ucd{src.var.amplitude} from E to Q.
+\item Change positional syntax code of stat.stdev to Q in order to combine it to stat.confidenceLevel, for instance  
+\item Change positional syntax code of \ucd{src.var.amplitude} from E to Q.
 \end{itemize}
 
 \subsubsection*{Deletion}
@@ -1106,7 +1106,7 @@ Description changed in words: {\tt phys.atmol.qn}
 \subsection{Changes from PR v1.21}
 \subsubsection*{Amendments/clarifications}
 \begin{itemize}
-\item Syntax flag changed in words: {\tt phys.polarization}
+\item Syntax code changed in words: {\tt phys.polarization}
 \item \begin{flushleft}
 Description changed in words: 
 {\tt em.IR.FIR}, {\tt em.IR.MIR}, {\tt em.IR.NIR}, {\tt em.line.OIII}
@@ -1123,7 +1123,7 @@ Description changed in words:
 \subsubsection*{Amendments/clarifications}
 \begin{itemize}
 \item Spelling: {\tt phys.atmol.sWeight}
-\item Syntax flag changed in words: {\tt phys.atmol}, {\tt spect.line}
+\item Syntax code changed in words: {\tt phys.atmol}, {\tt spect.line}
 \item \begin{flushleft}
 Description changed in words: 
 {\tt meta.dataset}, {\tt obs.atmos}, {\tt phot.color.reddFree}, 
@@ -1190,7 +1190,7 @@ Deprecated UCD & New corresponding UCD\\
 \begin{enumerate}
 \item Descriptions have been changed for the following words: {\tt em.line}, {\tt instr.pixel}, 
 {\tt phys.gravity}, {\tt pos.earth.altitude}
-\item The syntax flags changed for words: {\tt instr.filter}, {\tt phys.angSize}
+\item The syntax codes changed for words: {\tt instr.filter}, {\tt phys.angSize}
 \item The following words have been deprecated:
 
 \begin{tabular}{|l|l|}
@@ -1293,7 +1293,7 @@ Deprecated UCD & New corresponding UCD\\
 \end{longtable}
 
 \item \begin{flushleft}
-The syntax flags changed for words: 
+The syntax codes changed for words: 
 {\tt instr.fov}, {\tt instr.obsty}, {\tt meta.file}, 
 {\tt phys.angSize}, {\tt pos.cartesian}, {\tt stat.fit.omc}
 \end{flushleft}
