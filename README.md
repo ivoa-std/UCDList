@@ -30,7 +30,7 @@ Recommandation](http://www.ivoa.net/documents/latest/UCDlistMaintenance.html).
 The last stable version is
 **[EN-1.6](https://ivoa.net/documents/UCD1+/20241218/index.html)**.
 
-Next version will be 1.7, as an _Proposed Endorsed Note_. It will be prepared in this repository. 
+Next version will be 1.7, as an _Proposed Endorsed Note_. It will be prepared in this repository. [v1.7 RFM](https://wiki.ivoa.net/twiki/bin/view/IVOA/UCDList_1-7_RFM) is the web page to collect the Requests For Modification . 
  _It is not yet finalized and so, should not be considered yet as stable for 
 operational implementation._
 
